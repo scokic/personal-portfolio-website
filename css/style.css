@@ -93,6 +93,26 @@ body {
   box-shadow: 5px 0 25px var(--shadow);
 }
 
+/* CUSTOM SCROLLBAR */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
 @media only screen and (max-width: 900px) {
   .header {
     flex-direction: column;
@@ -134,6 +154,7 @@ body {
     top: 20px;
     right: 20px;
     z-index: 10;
+    cursor: pointer;
   }
 
   .bar {
