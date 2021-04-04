@@ -6,10 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Strahinja Cokić</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/6d1426eb41.js"
+      crossorigin="anonymous"
+    ></script>
+
     <script src="js/script.js" defer></script>
   </head>
   <body>
-    <div class="header">
+    <section class="header">
       <div class="logo-container nav-container">
         <p id="logo"><a href="#">Strahinja</a></p>
       </div>
@@ -24,7 +29,7 @@
         </ul>
       </div>
       <div class="contact-container nav-container">
-        <button class="contact-btn">Kontakt</button>
+        <button class="button contact-button">Kontakt</button>
       </div>
       <div class="hamburger-container">
         <div class="hamburger">
@@ -33,6 +38,143 @@
           <div class="bar bar-3"></div>
         </div>
       </div>
-    </div>
+    </section>
+
+    <section class="section-container hero">
+      <div class="container">
+        <div class="text-container">
+          <h3>Zdravo ja sam Strahinja!</h3>
+          <h1>
+            Ja sam projekt menadžer koji želi da postane frontend developer.
+          </h1>
+          <button class="button">Kontakt</button>
+        </div>
+        <div class="img-container">
+          <img
+            src="https://uploads-ssl.webflow.com/5e8c566954381032f62e178b/5ea3ec8bd3a80fe62bc11cda_kristi-header-optimized.jpg"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="section-container services">
+      <div class="container custom-services-container">
+        <div class="experience-container">
+          <p>5+</p>
+          <h3>Godina radnog iskustva</h3>
+        </div>
+        <div class="services-container-inner">
+          <div class="headline-container">
+            <h2>Čime se bavim</h2>
+          </div>
+          <div class="services-container">
+            <div class="service-card frontend">
+              <i class="far fa-file-code"></i>
+              <h3>Frontend</h3>
+              <p>
+                Bavim se frontendom. Aktivno učim HTML, CSS i JavaScript. Plan
+                mi je da postanem fullstack developer.
+              </p>
+            </div>
+            <div class="service-card design">
+              <i class="fas fa-drafting-compass"></i>
+              <h3>UI & UX</h3>
+              <p>Bavim se dizajnom i volim da pravim lepe interfejse.</p>
+              <p>Koristim Adobe Illustrator i XD, Affinity Designer i Photo.</p>
+            </div>
+            <div class="service-card wordpress">
+              <i class="fab fa-wordpress-simple"></i>
+              <h3>WordPress</h3>
+              <p>
+                Pravim sajtove u WordPress-u. Najćešće koristim Divi temu i
+                unapređujem je sa custom CSS-om i JavaScript-om.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects">
+      <div class="container">
+        <div class="headline-container">
+          <h2>Moji omiljeni projekti</h2>
+        </div>
+        <div class="project-cards-container">
+          <div class="project-card">
+            <!-- <div class="project-img-container"> -->
+            <img
+              src="https://uploads-ssl.webflow.com/5e8c566954381032f62e178b/5ea3ec8bd3a80fe62bc11cda_kristi-header-optimized.jpg"
+              alt=""
+            />
+            <!-- </div> -->
+            <div class="project-card-info">
+              <h3>Lični portfolio</h3>
+              <p>
+                Napravio sam ovaj sajt na kome se trenutno nalazite. Sajt
+                prepoznaje preferiranu temu korisnika i prilagođava sadržaj
+                istom.
+              </p>
+              <br />
+              <div class="project-used-tech">
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-js"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <!-- <div class="project-img-container"> -->
+            <img
+              src="https://uploads-ssl.webflow.com/5e8c566954381032f62e178b/5ea3ec8bd3a80fe62bc11cda_kristi-header-optimized.jpg"
+              alt=""
+            />
+            <!-- </div> -->
+            <div class="project-card-info">
+              <h3>Notes App</h3>
+              <p>
+                Napravio sam aplikaciju za lične beleške koja koristi Firebase
+                server i čuva beleške na nivou user-a.
+              </p>
+              <br />
+              <div class="project-used-tech">
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-js"></i>
+                <i class="fab fa-gripfire"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <!-- <div class="project-img-container"> -->
+            <img
+              src="https://uploads-ssl.webflow.com/5e8c566954381032f62e178b/5ea3ec8bd3a80fe62bc11cda_kristi-header-optimized.jpg"
+              alt=""
+            />
+            <!-- </div> -->
+            <div class="project-card-info">
+              <h3>Two Player Dice Game</h3>
+              <p>
+                U okviru JS kursa napravio sam aplikaciju za dva igrača.
+                Pobednik je igrač koji prvi dostigne 100 poena.
+              </p>
+              <br />
+              <div class="project-used-tech">
+                <i class="fab fa-js"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="container">
+        <p>Napravljeno sa ❤ u Beogradu</p>
+        <p>Copyright 2021</p>
+      </div>
+    </section>
   </body>
 </html>
