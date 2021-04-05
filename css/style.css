@@ -398,7 +398,8 @@ p {
 
 /* ------------------------------------ PROJECTS ------------------------------------ */
 
-.projects .container {
+.projects .container,
+.components .container {
   display: block;
   padding: 25px;
 }
