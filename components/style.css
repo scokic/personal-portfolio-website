@@ -32,15 +32,11 @@ body {
   left: 25px;
 }
 
-.nav button {
+.nav .button {
   background-color: var(--dark-blue);
   padding: 15px 30px;
   font-size: 1em;
   border-radius: 5px;
-}
-
-.nav button a {
-  text-decoration: none;
   color: var(--white);
 }
 

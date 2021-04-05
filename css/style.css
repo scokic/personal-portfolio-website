@@ -440,6 +440,10 @@ p {
   box-shadow: 0 5px 25px var(--shadow);
 }
 
+.project-used-tech {
+  margin-bottom: 15px;
+}
+
 .project-used-tech i {
   font-size: 2em;
   margin-right: 10px;

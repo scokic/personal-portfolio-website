@@ -25,5 +25,3 @@ function scrollFunction() {
     header.classList.remove("sticky");
   }
 }
-
-// Light theme
