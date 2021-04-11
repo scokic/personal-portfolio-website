@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kanban Component</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="title">
+        <div class="header-wrapper">
+          <h1>Naslov</h1>
+        </div>
+      </div>
+      <div class="subheader">
+        <div class="subheader subheader__view">
+          <a href="#">Kanban</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="kanban-container">
+        <div class="kanban-stage">
+          <div class="kanban-stage-title">
+            <h3>Board 1</h3>
+          </div>
+
+          <div class="kanban-card-container">
+            <div class="kanban-card">
+              <h4>Card</h4>
+              <p>
+                Some relevant text in multiple lines. Let's see how this is
+                handled.
+              </p>
+            </div>
+            <div class="kanban-card">
+              <h4>Card</h4>
+              <p>Some relevant text</p>
+            </div>
+            <div class="kanban-card">
+              <h4>Card</h4>
+              <p>Some relevant text</p>
+            </div>
+          </div>
+
+          <div class="new-card-container">
+            <p class="button add-new-card">+ Add new card</p>
+          </div>
+        </div>
+
+        <div class="kanban-stage">
+          <div class="kanban-stage-title">
+            <h3>Board 2</h3>
+          </div>
+
+          <div class="kanban-card-container">
+            <div class="kanban-card">
+              <h4>Card</h4>
+              <p>Some relevant text</p>
+            </div>
+          </div>
+          <div class="new-card-container">
+            <p class="button add-new-card">+ Add new card</p>
+          </div>
+        </div>
+
+        <div class="kanban-stage">
+          <div class="kanban-stage-title">
+            <h3>Board 3</h3>
+          </div>
+
+          <div class="kanban-card-container"></div>
+
+          <div class="new-card-container">
+            <p class="button add-new-card">+ Add new card</p>
+          </div>
+        </div>
+
+        <div class="kanban-stage new-stage-container">
+          <div class="kanban-card new-card-container">
+            <p class="button new-stage-button">+ Add new stage</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
