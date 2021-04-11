@@ -83,6 +83,7 @@ body {
   display: flex;
   flex-flow: row;
   gap: 25px;
+  -webkit-column-gap: 25px;
   overflow-x: auto;
   align-items: flex-start;
 }
@@ -107,6 +108,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  -webkit-column-gap: 25px;
   overflow-y: auto;
   overflow-x: hidden;
   max-height: calc(100vh - 330px);
