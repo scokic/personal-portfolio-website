@@ -1,5 +1,5 @@
 * {
-  font-family: -apple-system, "Poppins", sans-serif;
+  font-family: 'Inter', sans-serif;
   margin: 0;
   color: var(--text);
   box-sizing: border-box;
@@ -12,7 +12,7 @@
     --grey: #7f7f7f30;
     --shadow: #00000025;
     --text: #282828;
-    --accent: blue;
+    --accent: #42B571;
     --accent-light: lightblue;
     --accent-dark: darkblue;
     --always-white: #ffffff;
@@ -21,12 +21,14 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --primary: #282828;
+    /* --primary: #282828; */
+    --primary: #07111A;
     --secondary: #323232;
     --grey: #7f7f7f30;
     --shadow: #00000040;
     --text: #ffffff;
-    --accent: blue;
+    --text-light: #cccccc;
+    --accent: #42B571;
     --accent-light: lightblue;
     --accent-dark: darkblue;
     --always-white: #ffffff;
@@ -41,41 +43,53 @@ body {
 /* ------------------------------------ FONT SIZES ------------------------------------ */
 
 h1 {
-  font-size: 45px;
-  line-height: 55px;
-  font-weight: 600;
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 700;
 }
 
 h2 {
   font-size: 35px;
+  line-height: 40px;
   font-weight: 500;
 }
 
 h3 {
   font-size: 20px;
+  line-height: 30px;
   font-weight: 400;
+  color: var(--text-light);
 }
 
 p {
   font-size: 16px;
+  line-height: 22px;
+  color: var(--text-light);
 }
 
 @media screen and (max-width: 800px) {
   h1 {
     font-size: 40px;
   }
-
+  
   h2 {
     font-size: 30px;
   }
-
+  
   h3 {
     font-size: 20px;
   }
-
+  
   p {
     font-size: 16px;
   }
+}
+
+.logo-container a {
+  text-decoration: none;
+  font-size: 40px!important;
+  color: var(--accent);
+  font-weight: 500;
 }
 
 /* ------------------------------------ CUSTOM SCROLLBAR ------------------------------------ */
@@ -100,13 +114,17 @@ p {
 /* ------------------------------------ NAVIGATION ------------------------------------ */
 
 .header {
-  background-color: var(--primary);
+  background-color: var(--background-lg);
+  transition: 0.2s ease-out;
+  z-index: 9999; 
+}
+
+.header .container {
+  max-width: 1080px;
+  padding: 25px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  overflow: hidden;
-  transition: 0.2s ease-out;
-  z-index: 9999;
 }
 
 .sticky {
@@ -123,12 +141,15 @@ p {
 .nav a {
   text-decoration: none;
   padding: 1em;
-  border-bottom: 5px solid transparent;
+  text-transform: uppercase;
 }
 
 .nav a:hover {
-  color: var(--accent-light);
-  border-bottom: 5px solid var(--accent-light);
+  color: var(--accent);
+}
+
+.logo-container {
+  flex-grow: 1;
 }
 
 #logo a {
@@ -139,15 +160,16 @@ p {
 }
 
 #logo a:hover {
-  color: var(--accent-light);
+  color: var(--accent);
 }
 
 .button {
   background-color: var(--accent);
   border: none;
   font-size: 1em;
-  padding: 0.75em 1.5em;
-  border-radius: 3px;
+  padding: 0.75em 2em;
+  border-radius: 5px;
+  text-transform: uppercase;
   box-shadow: 0 5px 15px var(--shadow);
   color: var(--always-white);
   cursor: pointer;
@@ -267,11 +289,17 @@ p {
 
 .section-container,
 .hero {
+  max-width: 1080px;
+  margin: auto;
   padding: 25px;
 }
 
+.hero {
+  background-color: var(--background-lg);
+}
+
 .container {
-  max-width: 1200px;
+  max-width: 1080px;
   display: flex;
   margin: auto;
   display: flex;
@@ -280,11 +308,11 @@ p {
 }
 
 .hero .container {
-  margin: 50px auto;
+  margin: 125px auto;
 }
 
-.container h3 {
-  margin-bottom: 2vh;
+.container p {
+  margin-bottom: 1.5em;
 }
 
 .container h1 {
@@ -296,7 +324,7 @@ p {
 }
 
 .img-container {
-  width: 40%;
+  width: 45%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -306,7 +334,15 @@ p {
   max-width: 80%;
 }
 
+.hero .button {
+  margin-top: 15px;
+}
+
 @media screen and (max-width: 800px) {
+  .hero .container {
+    margin: 0;
+  }
+  
   .container {
     flex-direction: column-reverse;
   }
@@ -315,11 +351,30 @@ p {
   .img-container {
     width: 100%;
     margin-bottom: 25px;
+    margin-top: 25px;
   }
 
   .hero .container .button {
     width: 100%;
   }
+}
+
+/* ------------------------------------ MY STORY ------------------------------------ */
+
+.my-story .container {
+  margin: 100px auto;
+}
+
+.my-story h2 {
+  font-size: 2em;
+  font-weight: 500;
+  line-height: 3em;
+}
+
+.my-story p {
+  font-size: 1.3em;
+  line-height: 1.4em;
+  font-weight: 300;
 }
 
 /* ------------------------------------ SERVICES ------------------------------------ */

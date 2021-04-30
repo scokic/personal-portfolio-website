@@ -10,22 +10,24 @@
       src="https://kit.fontawesome.com/6d1426eb41.js"
       crossorigin="anonymous"
     ></script>
-
-    <script src="js/script.js" defer></script>
-  </head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">  </head>
   <body>
     <section class="header">
+      <div class="container">
       <div class="logo-container nav-container">
-        <p id="logo"><a href="#">Strahinja</a></p>
+        <a href="#">S.</a>
       </div>
 
       <div class="nav-links nav-container">
         <ul class="nav">
-          <li><a href="#">Početak</a></li>
-          <li><a href="#">Projekti</a></li>
-          <li><a href="#">Zašto ja</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Why me</a></li>
           <li><a href="#">Roadmap</a></li>
-          <li><a href="#">O meni</a></li>
+          <li><a href="#">About</a></li>
         </ul>
       </div>
       <div class="contact-container nav-container">
@@ -38,15 +40,17 @@
           <div class="bar bar-3"></div>
         </div>
       </div>
+    </div>
     </section>
 
     <section class="section-container hero">
       <div class="container">
         <div class="text-container">
-          <h3>Zdravo ja sam Strahinja!</h3>
-          <h1>
-            Ja sam projekt menadžer koji želi da postane frontend developer.
-          </h1>
+          <h3>FRONTEND DEVELOPER</h3>
+          <h1>STRAHINJA<br>COKIĆ</h1>
+          <p>
+            Ja sam projekt menadžer koji želi da postane frontend developer. Pored toga volim tehnologiju i aplikacije, grafički dizajn i rad sa ljudima. Ako vam zvučim zanimljivo nastavite da skrolujete! 😀
+          </p>
           <button class="button">Kontakt</button>
         </div>
         <div class="img-container">
@@ -55,40 +59,47 @@
       </div>
     </section>
 
-    <section class="section-container services">
-      <div class="container custom-services-container">
-        <div class="experience-container">
-          <p>5+</p>
-          <h3>Godina radnog iskustva</h3>
+
+    <section class="section-container my-story">
+      <div class="container">
+        <div class="text-container">
+          <h2>Zašto baš development?</h1>
+          <p>
+            Ja sam neko ko voli da isprobava i istražuje stvari non-stop.
+            <br>Tokom karijere imao sam priliku da to istraživanje sprovodim u delo konstantno isprobavajući nove poslove i rad sa novim timovima.
+            <br>U međuvremenu sam isprobavao razne metodologije organizacije i razne aplikacije. Tada sam shvatio da mnogo volim softver i iz dana u dan sam sve više uživao u kvalitetno napravljenoj aplikaciji. U nekom trenutku sam se zapitao "zašto ne bih ja napravio svoju aplikaciju?"
+            <br>Tada sam shvatio da je development za mene.
+            <br>Kako sam u međuvremenu stekao iskustvo u dizajnu i WordPress-u rešio sam da počnem od frontenda.
+            <br>Trenutno učim JavaScript a planiram da se usmerim na React i React Native.
+          </p>
+        </div>        
+      </div>
+    </section>
+
+
+    <section class="skills">
+      <div class="services-container">
+        <div class="service-card frontend">
+          <i class="far fa-file-code"></i>
+          <h3>Frontend</h3>
+          <p>
+            Bavim se frontendom. Aktivno učim HTML, CSS i JavaScript. Plan
+            mi je da postanem fullstack developer.
+          </p>
         </div>
-        <div class="services-container-inner">
-          <div class="headline-container">
-            <h2>Čime se bavim</h2>
-          </div>
-          <div class="services-container">
-            <div class="service-card frontend">
-              <i class="far fa-file-code"></i>
-              <h3>Frontend</h3>
-              <p>
-                Bavim se frontendom. Aktivno učim HTML, CSS i JavaScript. Plan
-                mi je da postanem fullstack developer.
-              </p>
-            </div>
-            <div class="service-card design">
-              <i class="fas fa-drafting-compass"></i>
-              <h3>UI & UX</h3>
-              <p>Bavim se dizajnom i volim da pravim lepe interfejse.</p>
-              <p>Koristim Adobe Illustrator i XD, Affinity Designer i Photo.</p>
-            </div>
-            <div class="service-card wordpress">
-              <i class="fab fa-wordpress-simple"></i>
-              <h3>WordPress</h3>
-              <p>
-                Pravim sajtove u WordPress-u. Najćešće koristim Divi temu i
-                unapređujem je sa custom CSS-om i JavaScript-om.
-              </p>
-            </div>
-          </div>
+        <div class="service-card design">
+          <i class="fas fa-drafting-compass"></i>
+          <h3>UI & UX</h3>
+          <p>Bavim se dizajnom i volim da pravim lepe interfejse.</p>
+          <p>Koristim Adobe Illustrator i XD, Affinity Designer i Photo.</p>
+        </div>
+        <div class="service-card wordpress">
+          <i class="fab fa-wordpress-simple"></i>
+          <h3>WordPress</h3>
+          <p>
+            Pravim sajtove u WordPress-u. Najćešće koristim Divi temu i
+            unapređujem je sa custom CSS-om i JavaScript-om.
+          </p>
         </div>
       </div>
     </section>
