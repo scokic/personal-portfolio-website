@@ -15,7 +15,6 @@
     --text: #282828;
     --accent: rgb(66, 181, 113);
     --accent-shadow: rgba(66, 181, 113, 0.5);
-    /* --accent: blue; */
     --accent-light: lightblue;
     --accent-dark: darkblue;
     --always-white: #ffffff;
@@ -33,7 +32,6 @@
     --text-light: #cccccc;
     --accent: rgb(66, 181, 113);
     --accent-shadow: rgba(66, 181, 113, 0.5);
-    /* --accent: blue; */
     --accent-light: lightblue;
     --accent-dark: darkblue;
     --always-white: #ffffff;
@@ -292,8 +290,8 @@ p {
 .section-container,
 .hero {
   max-width: 1200px;
-  margin: 5vh auto;
-  padding: 0 25px;
+  margin: 0 auto;
+  padding: 5vh 25px;
 }
 
 .hero {
@@ -704,10 +702,6 @@ p {
 }
 
 /* ------------------------------------ TEMP SECTION ------------------------------------ */
-/* 
-.footer {
-  background-color: var(--secondary);
-} */
 
 .footer .container {
   padding: 25px;

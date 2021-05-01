@@ -16,8 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">  </head>
   <body>
-
-    <section class="header">
+    <section class="header" id="header">
       <div class="container">
         <div class="logo-container nav-container"  id="logo">
           <a href="#">SC</a>
@@ -25,11 +24,10 @@
 
         <div class="nav-links nav-container">
           <ul class="nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Why me</a></li>
-            <li><a href="#">Roadmap</a></li>
-            <li><a href="#">About</a></li>
+            <li><a class="nav-link" href="#hero">Home</a></li>
+            <li><a class="nav-link" href="#about-me">O meni</a></li>
+            <li><a class="nav-link" href="#projects">Projekti</a></li>
+            <li><a class="nav-link" href="#components">Komponente</a></li>
           </ul>
         </div>
         <div class="contact-container nav-container">
@@ -45,7 +43,7 @@
     </div>
     </section>
 
-    <section class="section-container hero">
+    <section class="section-container hero" id="hero">
       <div class="container">
         <div class="text-container">
           <h3>FRONTEND DEVELOPER</h3>
@@ -65,7 +63,7 @@
     </section>
 
 
-    <section class="section-container about-me">
+    <section class="section-container about-me" id="about-me">
       <div class="container">
         <div class="text-container">
           <h2>O meni</h1>
@@ -146,7 +144,7 @@
     </section>
 
 
-    <section class="section-container skills">
+    <!-- <section class="section-container skills" id="skills">
       <div class="services-container">
         <div class="service-card frontend">
           <i class="far fa-file-code"></i>
@@ -171,18 +169,18 @@
           </p>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section class="section-container projects">
+    <section class="section-container projects" id="projects">
       <div class="container">
         <div class="headline-container">
           <h2>Moji omiljeni projekti</h2>
         </div>
         <div class="project-cards-container">
           <div class="project-card">
-            <!-- <div class="project-img-container"> -->
+            
             <img src=".\img\Project.png" alt="" />
-            <!-- </div> -->
+            
             <div class="project-card-info">
               <h3>Lični portfolio</h3>
               <p>
@@ -200,9 +198,9 @@
           </div>
 
           <div class="project-card">
-            <!-- <div class="project-img-container"> -->
+            
             <img src=".\img\Project.png" alt="" />
-            <!-- </div> -->
+            
             <div class="project-card-info">
               <h3>Notes App</h3>
               <p>
@@ -220,9 +218,9 @@
           </div>
 
           <div class="project-card">
-            <!-- <div class="project-img-container"> -->
+            
             <img src=".\img\Project.png" alt="" />
-            <!-- </div> -->
+            
             <div class="project-card-info">
               <h3>Two Player Dice Game</h3>
               <p>
@@ -239,16 +237,16 @@
       </div>
     </section>
 
-    <section class="section-container components">
+    <section class="section-container components" id="components">
       <div class="container">
         <div class="headline-container">
           <h2>Neke komponente koje sam napravio</h2>
         </div>
         <div class="project-cards-container">
           <div class="project-card">
-            <!-- <div class="project-img-container"> -->
+            
             <img src=".\img\Modern Card Slider.png" alt="" />
-            <!-- </div> -->
+            
             <div class="project-card-info">
               <h3>Modern Card Slider</h3>
               <p>
@@ -269,13 +267,13 @@
               />
             </div>
           </div>
-        </div>
+        
 
-        <div class="project-cards-container">
+
           <div class="project-card">
-            <!-- <div class="project-img-container"> -->
+            
             <img src=".\img\Modern Card Slider.png" alt="" />
-            <!-- </div> -->
+            
             <div class="project-card-info">
               <h3>Kanban board</h3>
               <p>

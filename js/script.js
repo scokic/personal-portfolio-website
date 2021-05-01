@@ -26,6 +26,7 @@ function scrollFunction() {
   }
 }
 
+// POTREBNO SMISLITI DRUGO REŠENJE ZA OVO
 // Hover tool popup
 // 1. show popup on hover
 // 2. create popup on hover
@@ -35,13 +36,37 @@ const loadingPlaceholder = document.querySelectorAll(".tool-image-placeholder");
 loadingPlaceholder.forEach((item) => {
   item.addEventListener("mouseover", function () {
     this.classList.remove("hidden");
-    console.log("hidden");
   });
 });
 
 loadingPlaceholder.forEach((item) => {
   item.addEventListener("mouseout", function () {
     this.classList.add("hidden");
-    console.log("hidden");
+  });
+});
+
+// Scroll to section
+
+let navButton = document.querySelectorAll(".nav-link");
+let isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
+
+navButton.forEach((item) => {
+  let scrollBlockTarget;
+  if (isMobile) {
+    scrollBlockTarget = "start";
+  } else {
+    scrollBlockTarget = "center";
+  }
+
+  item.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    let targetId = item.href.split("#")[1];
+    let target = document.getElementById(targetId);
+
+    target.scrollIntoView({
+      behavior: "smooth",
+      block: `${scrollBlockTarget}`,
+    });
   });
 });
