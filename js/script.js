@@ -28,8 +28,6 @@ function scrollFunction() {
 
 // POTREBNO SMISLITI DRUGO REŠENJE ZA OVO
 // Hover tool popup
-// 1. show popup on hover
-// 2. create popup on hover
 
 const loadingPlaceholder = document.querySelectorAll(".tool-image-placeholder");
 

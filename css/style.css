@@ -124,6 +124,9 @@ p {
   background-color: var(--primary);
   transition: 0.2s ease-out;
   z-index: 9999;
+  width: 100%;
+  position: fixed;
+  top: 0;
 }
 
 .header .container {
@@ -134,11 +137,11 @@ p {
   justify-content: space-between;
 }
 
-.sticky {
+/* .sticky {
   position: sticky;
   top: 0;
   box-shadow: 5px 0 25px var(--shadow);
-}
+} */
 
 .nav {
   display: flex;
@@ -295,6 +298,7 @@ p {
 }
 
 .hero {
+  padding-top: calc(100px + 5vh);
   background-color: var(--background-lg);
 }
 
