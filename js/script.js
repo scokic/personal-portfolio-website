@@ -66,5 +66,7 @@ navButton.forEach((item) => {
       behavior: "smooth",
       block: `${scrollBlockTarget}`,
     });
+
+    header.classList.remove("nav-open");
   });
 });
