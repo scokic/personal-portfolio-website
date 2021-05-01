@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Strahinja Cokić</title>
     <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/script.js" ></script>
     <script
       src="https://kit.fontawesome.com/6d1426eb41.js"
       crossorigin="anonymous"
@@ -15,31 +16,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">  </head>
   <body>
+
     <section class="header">
       <div class="container">
-      <div class="logo-container nav-container">
-        <a href="#">S.</a>
-      </div>
-
-      <div class="nav-links nav-container">
-        <ul class="nav">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Why me</a></li>
-          <li><a href="#">Roadmap</a></li>
-          <li><a href="#">About</a></li>
-        </ul>
-      </div>
-      <div class="contact-container nav-container">
-        <button class="button contact-button">Kontakt</button>
-      </div>
-      <div class="hamburger-container">
-        <div class="hamburger">
-          <div class="bar bar-1"></div>
-          <div class="bar bar-2"></div>
-          <div class="bar bar-3"></div>
+        <div class="logo-container nav-container"  id="logo">
+          <a href="#">SC</a>
         </div>
-      </div>
+
+        <div class="nav-links nav-container">
+          <ul class="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Why me</a></li>
+            <li><a href="#">Roadmap</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </div>
+        <div class="contact-container nav-container">
+          <button class="button nav-button contact-button">Kontakt</button>
+        </div>
+        <div class="hamburger-container">
+          <div class="hamburger">
+            <div class="bar bar-1"></div>
+            <div class="bar bar-2"></div>
+            <div class="bar bar-3"></div>
+          </div>
+        </div>
     </div>
     </section>
 
@@ -54,30 +56,97 @@
           <button class="button">Kontakt</button>
         </div>
         <div class="img-container">
-          <img src=".\img\Profile.png" />
+          <img src=".\img\Profile2.jpeg" />
+          <div class="img-background-element elipse"></div>
+          <div class="img-background-element square"></div>
+          <div class="img-background-element circle"></div>
         </div>
       </div>
     </section>
 
 
-    <section class="section-container my-story">
+    <section class="section-container about-me">
       <div class="container">
         <div class="text-container">
-          <h2>Zašto baš development?</h1>
+          <h2>O meni</h1>
           <p>
-            Ja sam neko ko voli da isprobava i istražuje stvari non-stop.
-            <br>Tokom karijere imao sam priliku da to istraživanje sprovodim u delo konstantno isprobavajući nove poslove i rad sa novim timovima.
-            <br>U međuvremenu sam isprobavao razne metodologije organizacije i razne aplikacije. Tada sam shvatio da mnogo volim softver i iz dana u dan sam sve više uživao u kvalitetno napravljenoj aplikaciji. U nekom trenutku sam se zapitao "zašto ne bih ja napravio svoju aplikaciju?"
-            <br>Tada sam shvatio da je development za mene.
-            <br>Kako sam u međuvremenu stekao iskustvo u dizajnu i WordPress-u rešio sam da počnem od frontenda.
-            <br>Trenutno učim JavaScript a planiram da se usmerim na React i React Native.
+            Ja sam neko ko voli da isprobava i istražuje stvari.
+            <br><br>Tokom karijere imao sam priliku da to istraživanje sprovodim u delo konstantno isprobavajući nove poslove i rad sa novim timovima.
+            <br><br>U međuvremenu sam isprobavao razne metodologije organizacije i razne aplikacije. Tada sam shvatio da mnogo volim softver i iz dana u dan sam sve više uživao u kvalitetno napravljenoj aplikaciji. U nekom trenutku sam se zapitao "zašto ne bih ja napravio svoju aplikaciju?"
+            <br><br>Tada sam shvatio da je development za mene.
+            <br><br>Kako sam u međuvremenu stekao iskustvo u dizajnu i WordPress-u rešio sam da počnem od frontenda.
+            <br><br>Trenutno učim JavaScript a planiram da se usmerim na React i React Native.
           </p>
-        </div>        
+        </div>   
+        <div class="tools-container">
+          <div class="tool-image-placeholder hidden">
+            <div class="loaded loading-opacity"></div>
+            <img src="./img/tools/html5-logo.svg" alt="" class="tool ">
+            <div class="loading-popup">
+              <p>Naučeno!</p>
+            </div>
+          </div>
+          
+          <div class="tool-image-placeholder hidden">
+            <div class="loaded loading-opacity"></div>
+            <img src="./img/tools/css3-logo.svg" alt="" class="tool ">
+            <div class="loading-popup">
+              <p>Naučeno!</p>
+            </div>
+          </div>
+
+          <div class="tool-image-placeholder hidden"  id="test">
+            <div class="loading loading-opacity"></div>
+            <img src="./img/tools/javascript-logo.svg" alt="" class="tool">
+            <div class="loading-popup">
+              <p>Trenutno učim</p>
+            </div>
+          </div>
+
+          <div class="tool-image-placeholder hidden">
+            <div class="not-loaded loading-opacity"></div>
+            <img src="./img/tools/react-logo.svg" alt="" class="tool">
+            <div class="loading-popup">
+              <p>TBD</p>
+            </div>
+          </div>
+
+          <div class="tool-image-placeholder hidden">
+            <div class="not-loaded loading-opacity"></div>
+            <img src="./img/tools/sass-logo.svg" alt="" class="tool">
+            <div class="loading-popup">
+              <p>TBD</p>
+            </div>
+          </div>
+
+          <div class="tool-image-placeholder hidden">
+            <div class="not-loaded loading-opacity"></div>
+            <img src="./img/tools/bootstrap-5-logo.svg" alt="" class="tool">
+            <div class="loading-popup">
+              <p>TBD</p>
+            </div>
+          </div>
+          
+          <div class="tool-image-placeholder hidden">
+            <div class="loaded loading-opacity"></div>
+            <img src="./img/tools/visual-studio-code-logo.svg" alt="" class="tool">
+            <div class="loading-popup">
+              <p>Redovno koristim!</p>
+            </div>
+          </div>
+          <div class="tool-image-placeholder hidden">
+            <div class="loading loading-opacity"></div>
+            <img src="./img/tools/git-logo.svg" alt="" class="tool">
+            <div class="loading-popup">
+              <p>Trenutno učim</p>
+            </div>
+          </div>
+        </div>     
       </div>
     </section>
 
 
-    <section class="skills">
+    <section class="section-container skills">
       <div class="services-container">
         <div class="service-card frontend">
           <i class="far fa-file-code"></i>
@@ -104,7 +173,7 @@
       </div>
     </section>
 
-    <section class="projects">
+    <section class="section-container projects">
       <div class="container">
         <div class="headline-container">
           <h2>Moji omiljeni projekti</h2>
@@ -170,7 +239,7 @@
       </div>
     </section>
 
-    <section class="components">
+    <section class="section-container components">
       <div class="container">
         <div class="headline-container">
           <h2>Neke komponente koje sam napravio</h2>

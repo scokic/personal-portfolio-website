@@ -25,3 +25,23 @@ function scrollFunction() {
     header.classList.remove("sticky");
   }
 }
+
+// Hover tool popup
+// 1. show popup on hover
+// 2. create popup on hover
+
+const loadingPlaceholder = document.querySelectorAll(".tool-image-placeholder");
+
+loadingPlaceholder.forEach((item) => {
+  item.addEventListener("mouseover", function () {
+    this.classList.remove("hidden");
+    console.log("hidden");
+  });
+});
+
+loadingPlaceholder.forEach((item) => {
+  item.addEventListener("mouseout", function () {
+    this.classList.add("hidden");
+    console.log("hidden");
+  });
+});
