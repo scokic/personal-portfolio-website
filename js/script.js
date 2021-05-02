@@ -1,6 +1,6 @@
-"use strict";
+// "use strict";
 
-screen.orientation.lock("landscape");
+// screen.orientation.lock("landscape");
 
 // Mobile menu dropdown
 
