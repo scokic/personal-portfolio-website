@@ -133,7 +133,7 @@ p {
   transition: 0.2s ease-out;
   z-index: 9999;
   width: 100%;
-  position: sticky;
+  position: fixed;
   top: 0;
 }
 
@@ -206,6 +206,7 @@ p {
   .header {
     flex-direction: column;
     padding-bottom: 15px;
+    position: fixed;
   }
 
   #logo {
@@ -305,7 +306,7 @@ p {
 }
 
 .hero {
-  padding-top: 5vh;
+  padding-top: calc(100px + 5vh);
   background-color: var(--background-lg);
 }
 
