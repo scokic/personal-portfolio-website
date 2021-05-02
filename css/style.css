@@ -133,7 +133,7 @@ p {
   transition: 0.2s ease-out;
   z-index: 9999;
   width: 100%;
-  position: fixed;
+  position: sticky;
   top: 0;
 }
 
@@ -146,8 +146,6 @@ p {
 }
 
 .sticky {
-  /* position: sticky;
-  top: 0; */
   box-shadow: 5px 0 25px var(--shadow);
 }
 
@@ -219,8 +217,9 @@ p {
   .nav {
     flex-direction: column;
     align-items: center;
+    padding-left: 0;
     display: none;
-    /* overflow: hidden; */
+    overflow: hidden;
     margin: 25px auto;
   }
 
@@ -275,8 +274,6 @@ p {
     -moz-transform: rotate(-360deg) translate(-6px, 6.5px);
     -ms-transform: rotate(-360deg) translate(-6px, 6.5px);
     -o-transform: rotate(-360deg) translate(-6px, 6.5px);
-    /* rotate: -45deg;
-    translate: -7px, 5px; */
   }
 
   .nav-open .bar-2 {
@@ -285,7 +282,6 @@ p {
     -moz-transform: translateX(-15px);
     -ms-transform: translateX(-15px);
     -o-transform: translateX(-15px);
-    /* translate: -15px 0; */
     background-color: transparent;
     box-shadow: none;
   }
@@ -296,8 +292,6 @@ p {
     -moz-transform: rotate(360deg) translate(-6px, -6.5px);
     -ms-transform: rotate(360deg) translate(-6px, -6.5px);
     -o-transform: rotate(360deg) translate(-6px, -6.5px);
-    /* rotate: 45deg;
-    translate: -7px, -5px; */
   }
 }
 
@@ -311,7 +305,7 @@ p {
 }
 
 .hero {
-  padding-top: calc(100px + 5vh);
+  padding-top: 5vh;
   background-color: var(--background-lg);
 }
 
