@@ -45,7 +45,7 @@ window.onscroll = function () {
 };
 
 function scrollFunction() {
-  if (window.pageYOffset > 50) {
+  if (window.pageYOffset > 100) {
     scrollTopContainer.classList.add("visible");
   } else {
     scrollTopContainer.classList.remove("visible");
