@@ -1,3 +1,7 @@
+"use strict";
+
+screen.orientation.lock("landscape");
+
 // Mobile menu dropdown
 
 let hamburger = document.querySelector(".hamburger");

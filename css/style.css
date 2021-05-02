@@ -8,9 +8,11 @@
 @media (prefers-color-scheme: light) {
   :root {
     --primary: #ffffff;
+    --secondary: hsl(150, 100%, 95%);
+
     --contrast: #07111a;
-    --secondary: #ededed;
     --grey: #7f7f7f30;
+
     --shadow: #00000050;
     --text: #282828;
 
@@ -25,11 +27,13 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --primary: #07111a;
+    --primary: hsl(208, 58%, 6%);
+    --secondary: hsl(208, 58%, 10%);
+
     --contrast: #ffffff;
-    --secondary: #323232;
     --grey: #7f7f7f30;
     --shadow: #00000099;
+
     --text: #ffffff;
     --text-light: #cccccc;
 
@@ -203,7 +207,6 @@ p {
 @media only screen and (max-width: 800px) {
   .header {
     flex-direction: column;
-    padding-bottom: 15px;
   }
 
   #logo {
@@ -216,9 +219,12 @@ p {
     flex-direction: column;
     padding: 0;
     align-items: center;
-    display: none;
-    transition: 0.2s ease;
-    margin: 25px auto;
+
+    display: flex;
+    height: 0;
+    overflow: hidden;
+
+    margin: 25px auto -15px auto;
   }
 
   .nav a {
@@ -256,13 +262,11 @@ p {
   }
 
   .nav-open .nav {
-    display: flex;
-    margin-bottom: -15px;
+    height: auto;
   }
 
-  .nav-button {
-    padding: 1em 33vw;
-    display: none;
+  #nav-contact-button {
+    padding: 15px 30vw !important;
   }
 
   /* ------------------------------------ HAMBURGER ANIMATION ------------------------------------ */
@@ -271,14 +275,19 @@ p {
     transform: rotate(-45deg) translate(-6px, 6.5px);
     -webkit-transform: rotate(-45deg) translate(-6px, 6.5px);
     -moz-transform: rotate(-360deg) translate(-6px, 6.5px);
-    rotate: -45deg;
-    translate: -7px, 5px;
+    -ms-transform: rotate(-360deg) translate(-6px, 6.5px);
+    -o-transform: rotate(-360deg) translate(-6px, 6.5px);
+    /* rotate: -45deg;
+    translate: -7px, 5px; */
   }
 
   .nav-open .bar-2 {
     transform: translateX(-15px);
     -webkit-transform: translateX(-15px);
-    translate: -15px 0;
+    -moz-transform: translateX(-15px);
+    -ms-transform: translateX(-15px);
+    -o-transform: translateX(-15px);
+    /* translate: -15px 0; */
     background-color: transparent;
     box-shadow: none;
   }
@@ -287,8 +296,10 @@ p {
     transform: rotate(45deg) translate(-6px, -6.5px);
     -webkit-transform: rotate(45deg) translate(-6px, -6.5px);
     -moz-transform: rotate(360deg) translate(-6px, -6.5px);
-    rotate: 45deg;
-    translate: -7px, -5px;
+    -ms-transform: rotate(360deg) translate(-6px, -6.5px);
+    -o-transform: rotate(360deg) translate(-6px, -6.5px);
+    /* rotate: 45deg;
+    translate: -7px, -5px; */
   }
 }
 
@@ -644,35 +655,49 @@ p {
 .projects .container,
 .components .container {
   display: block;
-  padding: 25px;
 }
 
 .project-cards-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 25px;
+  padding-top: 10vh;
 }
 
 .project-card {
   display: flex;
   align-items: center;
   overflow: visible;
+  width: calc(100% + 100px);
+  transform: translateX(-50px);
+  margin-top: 5vh;
 }
 
 .project-card img {
-  width: 50%;
-  transform: translateX(10%);
-  border-radius: 5px;
+  width: 60%;
+  height: 500px;
+  transform: translateX(50px);
+  border-radius: 10px;
 }
 
 .project-card-info {
-  width: 50%;
+  width: 40%;
   background-color: var(--primary);
   padding: 25px;
-  border-radius: 5px;
+  border-radius: 10px;
   z-index: 10;
-  transform: translateX(-10%);
+  transform: translateX(-50px);
   box-shadow: 0 5px 15px var(--shadow);
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.reverse img {
+  transform: translateX(-50px);
+}
+
+.reverse .project-card-info {
+  transform: translateX(50px);
 }
 
 .project-card-info h3 {
@@ -688,17 +713,20 @@ p {
 }
 
 .project-used-tech i {
-  font-size: 2em;
-  margin-right: 10px;
+  font-size: 3em;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.github-button {
+  margin-left: 1rem;
 }
 
 @media screen and (max-width: 1000px) {
   .project-cards-container {
     grid-template-columns: 1fr;
   }
-}
 
-@media screen and (max-width: 600px) {
   .project-cards-container {
     grid-template-columns: 1fr;
   }
@@ -706,16 +734,36 @@ p {
   .project-card {
     flex-direction: column;
     margin: -25px auto;
+    width: 100%;
+    transform: none;
   }
 
   .project-card img {
     width: 100%;
     transform: translateY(50px);
+    height: 400px;
   }
 
   .project-card-info {
     width: 80%;
     transform: translateY(-50px);
+  }
+
+  .reverse .project-card-info {
+    width: 80%;
+    transform: translateY(-50px);
+  }
+
+  .project-card .button {
+    display: block;
+    width: 100%;
+  }
+
+  .github-button {
+    display: block;
+    margin-left: 0;
+    margin-top: 1rem;
+    text-align: center;
   }
 }
 
@@ -723,6 +771,7 @@ p {
 
 .contact {
   padding: 7.5em 0;
+  background: var(--secondary);
 }
 
 .contact .container {
@@ -751,6 +800,25 @@ p {
 @media only screen and (min-width: 800px) {
   .contact .container p {
     max-width: 500px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .contact h3 {
+    font-size: 1.5rem;
+  }
+
+  .contact h2 {
+    font-size: 2.3rem;
+    margin: 1.5rem auto;
+  }
+
+  .contact h2 {
+    margin: 1.5rem auto;
+  }
+
+  .contact p {
+    max-width: 90%;
   }
 }
 
