@@ -46,6 +46,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--primary);
   margin: 0;
@@ -206,7 +210,6 @@ p {
   .header {
     flex-direction: column;
     padding-bottom: 15px;
-    position: fixed;
   }
 
   #logo {
@@ -294,6 +297,30 @@ p {
     -ms-transform: rotate(360deg) translate(-6px, -6.5px);
     -o-transform: rotate(360deg) translate(-6px, -6.5px);
   }
+}
+
+/* ------------------------------------ SCROLL TO TOP ------------------------------------ */
+
+.scroll-to-top-container {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  height: 50px;
+  width: 50px;
+  display: grid;
+  border-radius: 100%;
+  place-items: center;
+  background-color: var(--accent);
+  cursor: pointer;
+  transition: 0.25s ease-in;
+  opacity: 0;
+}
+.scroll-to-top {
+  font-size: 1.6rem;
+}
+
+.scroll-to-top-container.visible {
+  opacity: 100;
 }
 
 /* ------------------------------------ HERO IMAGE ------------------------------------ */
@@ -432,6 +459,7 @@ p {
 /* ------------------------------------ ABOUT ME ------------------------------------ */
 
 .about-me {
+  max-width: 100%;
   background-color: var(--secondary);
 }
 

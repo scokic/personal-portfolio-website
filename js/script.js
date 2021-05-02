@@ -1,7 +1,5 @@
 // "use strict";
 
-// screen.orientation.lock("landscape");
-
 // Mobile menu dropdown
 
 let hamburger = document.querySelector(".hamburger");
@@ -27,6 +25,30 @@ function scrollFunction() {
     header.classList.add("sticky");
   } else {
     header.classList.remove("sticky");
+  }
+}
+
+// When the user scrolls down 20px from the top of the document, show the button
+
+let scrollTopButton = document.querySelector(".scroll-to-top");
+let scrollTopContainer = document.querySelector(".scroll-to-top-container");
+
+// Scroll to top button
+
+scrollTopButton.addEventListener("click", () => {
+  document.body.scrollTop = 0; // for Safari
+  document.documentElement.scrollTop = 0; // for Chrome, Firefox, IE, Opera
+});
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (window.pageYOffset > 50) {
+    scrollTopContainer.classList.add("visible");
+  } else {
+    scrollTopContainer.classList.remove("visible");
   }
 }
 
