@@ -320,7 +320,7 @@ p {
 }
 
 .scroll-to-top-container.visible {
-  opacity: 100;
+  opacity: 1;
 }
 
 /* ------------------------------------ HERO IMAGE ------------------------------------ */
