@@ -46,7 +46,7 @@ loadingPlaceholder.forEach((item) => {
 // Scroll to section
 
 let navButton = document.querySelectorAll(".nav-link");
-let isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
+let isMobile = window.matchMedia("only screen and (max-width: 800px)").matches;
 
 navButton.forEach((item) => {
   let scrollBlockTarget;
