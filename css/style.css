@@ -223,7 +223,7 @@ p {
     display: none;
     overflow: hidden;
 
-    margin: 25px auto -15px auto;
+    margin: 25px auto;
   }
 
   .nav a {
@@ -262,6 +262,7 @@ p {
 
   .nav-open .nav {
     display: flex;
+    margin-top: -15px;
   }
 
   #nav-contact-button {
