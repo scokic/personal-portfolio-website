@@ -1,5 +1,5 @@
 * {
-  font-family: "Inter", sans-serif;
+  font-family: "Raleway", sans-serif;
   margin: 0;
   color: var(--text);
   box-sizing: border-box;
@@ -75,6 +75,7 @@ p {
   font-size: 1.1rem;
   line-height: 1.5rem;
   color: var(--text-light);
+  font-family: "Lato", sans-serif;
 }
 
 @media screen and (max-width: 800px) {
@@ -376,7 +377,8 @@ body.dark #dark-theme-moon {
 
 .hero h3 {
   color: var(--accent);
-  font-size: 1em;
+  font-size: 1.1em;
+  letter-spacing: 2px;
 }
 
 .container {
@@ -424,19 +426,19 @@ body.dark #dark-theme-moon {
 .elipse {
   border: solid 3px red;
   border-radius: 500px;
-  top: -25px;
+  top: -2vw;
   left: 0;
-  height: 400px;
-  width: 200px;
+  height: 30vw;
+  width: 15vw;
   z-index: -1;
 }
 
 .square {
   border: solid 3px blue;
   border-radius: 25px;
-  height: 250px;
-  width: 250px;
-  bottom: -25px;
+  height: 20vw;
+  width: 20vw;
+  bottom: -4vw;
   right: 0;
   z-index: -1;
 }
@@ -444,10 +446,10 @@ body.dark #dark-theme-moon {
 .circle {
   border: solid 3px green;
   border-radius: 250px;
-  height: 350px;
-  width: 350px;
-  right: -25px;
-  top: -15px;
+  height: 26vw;
+  width: 26vw;
+  right: -2vw;
+  top: -2vw;
   z-index: -1;
 }
 
@@ -455,7 +457,7 @@ body.dark #dark-theme-moon {
   margin-left: 0;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
   .hero .container {
     margin: 0;
   }
@@ -476,23 +478,24 @@ body.dark #dark-theme-moon {
   }
 
   .elipse {
-    height: 300px;
-    width: 200px;
+    top: -2vh;
+    height: 30vh;
+    width: 15vh;
   }
 
   .square {
-    height: 200px;
-    width: 200px;
-    right: 10px;
+    height: 20vh;
+    width: 20vh;
+    bottom: -4vh;
   }
 
   .circle {
-    height: 275px;
-    width: 275px;
-    right: -5px;
+    height: 26vh;
+    width: 26vh;
+    right: -2vh;
+    top: -2vh;
   }
 }
-
 /* ------------------------------------ ABOUT ME ------------------------------------ */
 
 .about-me {
