@@ -15,12 +15,13 @@ hamburger.addEventListener("click", function () {
 
 // Sticky on scroll
 window.onscroll = function () {
-  scrollFunction();
+  stickyOnScroll();
+  scrollToTop();
 };
 
 let sticky = header.offsetTop;
 
-function scrollFunction() {
+function stickyOnScroll() {
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky");
   } else {
@@ -40,11 +41,7 @@ scrollTopButton.addEventListener("click", () => {
   document.documentElement.scrollTop = 0; // for Chrome, Firefox, IE, Opera
 });
 
-window.onscroll = function () {
-  scrollFunction();
-};
-
-function scrollFunction() {
+function scrollToTop() {
   if (window.pageYOffset > 100) {
     scrollTopContainer.classList.add("visible");
   } else {
