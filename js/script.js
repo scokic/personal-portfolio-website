@@ -96,5 +96,3 @@ navButton.forEach((item) => {
     header.classList.remove("nav-open");
   });
 });
-
-// this is a branching test
