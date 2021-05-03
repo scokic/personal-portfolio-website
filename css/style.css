@@ -459,7 +459,7 @@ body.dark #dark-theme-moon {
 
 @media screen and (max-width: 800px) {
   .hero {
-    padding-top: 5vh;
+    padding-top: 10vh;
   }
 
   .hero .container {
