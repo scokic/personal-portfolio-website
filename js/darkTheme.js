@@ -6,9 +6,9 @@ const darkThemeButton = document.querySelector("#dark-theme-toggle-container");
 const sun = document.getElementById("dark-theme-sun");
 const moon = document.getElementById("dark-theme-moon");
 
-let themePrefCheck = window.matchMedia("prefers-color-scheme: dark");
+let themePrefCheck = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-if ((themePrefCheck = true)) {
+if (themePrefCheck == true) {
   body.classList.add("dark");
 }
 

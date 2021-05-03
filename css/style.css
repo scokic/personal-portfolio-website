@@ -333,30 +333,31 @@ p {
   display: grid;
   border-radius: 100%;
   place-items: center;
-  background-color: var(--contrast);
   cursor: pointer;
   transition: 0.2s ease;
   box-shadow: 0px 2px 10px var(--shadow);
 }
 
+#dark-theme-sun,
+#dark-theme-moon {
+  height: 100%;
+  width: 100%;
+}
+
 #dark-theme-sun {
-  display: block;
-  height: 30px;
-  width: 30px;
+  display: none;
 }
 
 #dark-theme-moon {
-  display: none;
-  height: 40px;
-  width: 40px;
+  display: block;
 }
 
 body.dark #dark-theme-sun {
-  display: none;
+  display: block;
 }
 
 body.dark #dark-theme-moon {
-  display: block;
+  display: none;
 }
 
 /* ------------------------------------ HERO IMAGE ------------------------------------ */
