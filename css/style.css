@@ -456,10 +456,13 @@ body.dark #dark-theme-moon {
 }
 
 @media screen and (max-width: 800px) {
+  .hero {
+    padding-top: 5vh;
+  }
+
   .hero .container {
     margin: 0;
   }
-
   .container {
     flex-direction: column-reverse;
   }
