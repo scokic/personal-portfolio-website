@@ -253,9 +253,9 @@ p {
   }
 
   .bar {
-    height: 2px;
+    height: 3px;
     width: 100%;
-    border-radius: 1px;
+    border-radius: 2px;
     background-color: var(--text);
     transition: 0.5s cubic-bezier(0.68, -2, 0.32, 2.6);
   }
@@ -718,7 +718,7 @@ body.dark #dark-theme-moon {
 
 .project-card-info {
   width: 50%;
-  background-color: var(--primary);
+  background-color: var(--secondary);
   padding: 25px;
   border-radius: 10px;
   z-index: 10;
