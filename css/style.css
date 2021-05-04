@@ -262,6 +262,7 @@ p {
 
   .nav-open {
     height: auto;
+    background-color: var(--primary);
     box-shadow: 5px 0 25px var(--shadow-dark);
   }
 
