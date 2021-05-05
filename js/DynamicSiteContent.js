@@ -5,7 +5,7 @@ let pageContent = document.getElementById("page-content");
 (function () {
   pageContent.insertAdjacentHTML(
     "beforeend",
-    `"<section class="header" id="header">
+    `<section class="header" id="header">
     <div class="container">
       <div class="logo-container nav-container"  id="logo">
         <a href="#">SC</a>
@@ -284,7 +284,7 @@ let pageContent = document.getElementById("page-content");
       <p id="footerMadeInDescription"></p>
       <p id="footerCopyright"></p>
     </div>
-  </section>"
+  </section>
   `
   );
 })();
