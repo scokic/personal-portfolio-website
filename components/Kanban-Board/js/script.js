@@ -6,68 +6,66 @@ let newCardButtons = document.querySelectorAll(".add-new-card");
 let kanbanStage = document.querySelector(".kanban-card-container");
 let kanbanCard = document.querySelector(".kanban-card");
 
-newCardButtons.forEach((button) => {
-  button.addEventListener("click", createNewCard);
-});
+function createNewCard(e) {
+  const cardContainer = e.parentElement.parentElement.children[1];
 
-function createNewCard() {
-  //create card with header and text
+  cardContainer.insertAdjacentHTML(
+    "beforeEnd",
+    `<div class="kanban-card">
+      <p class="task-name">New task</p>
+      <div class="checkbox-container">
+        <input
+          type="checkbox"
+          class="done-checkbox"
+          onclick="markTaskDone(this)"
+        />
+      </div>
+      <button class="delete-button" onclick="deleteCard(this)">
+        x
+      </button>
+    </div>`
+  );
 
-  let newCard = document.createElement("div");
-
-  newCard.classList.add("kanban-card");
-  let newCardSubject = document.createElement("h4");
-  newCardSubject.textContent = "Hello";
-  let newCardText = document.createElement("p");
-  newCardText.textContent = "Hello";
-  newCard.appendChild(newCardSubject);
-  newCard.appendChild(newCardText);
-
-  let stageContainer = this.parentElement.parentElement;
-  let cardContainer = stageContainer.querySelector(".kanban-card-container");
-  cardContainer.appendChild(newCard);
-
-  //scroll to bottom
   cardContainer.scrollTo(10000, kanbanStage.scrollHeight);
+}
+
+/* ---------------------------- REMOVE CARD ---------------------------- */
+
+function deleteCard(e) {
+  e.parentElement.remove();
 }
 
 /* ---------------------------- CREATE NEW STAGE ON BOARD ---------------------------- */
 
 let newStageButton = document.querySelector(".new-stage-button");
+let kanbanContainer = document.querySelector(".kanban-container");
+let newStageContainer = document.querySelector(".new-stage-container");
 
 newStageButton.addEventListener("click", createNewStage);
 
 function createNewStage() {
-  let newStage = document.createElement("div");
-  newStage.classList.add("kanban-stage");
+  newStageContainer.insertAdjacentHTML(
+    "beforeBegin",
+    `<div class="kanban-stage">
+    <div class="kanban-stage-title">
+      <h3>Stage 3</h3>
+    </div>
 
-  let kanbanStageTitle = document.createElement("div");
-  kanbanStageTitle.classList.add("kanban-stage-title");
-  newStage.appendChild(kanbanStageTitle);
+    <div class="kanban-card-container"></div>
 
-  let newStageName = document.createElement("h3");
-  newStageName.textContent = "New board";
-  newStageName.classList.add("kanban-stage-title");
-  kanbanStageTitle.appendChild(newStageName);
+    <div class="new-card-container">
+      <button onclick="createNewCard(this)" class="button add-new-card">
+        + Add new card
+      </button>
+    </div>
+  </div>`
+  );
 
-  let newCardContainer = document.createElement("div");
-  newCardContainer.classList.add("kanban-card-container");
-  newStage.appendChild(newCardContainer);
+  kanbanContainer.scrollTo(100000, 0);
+}
 
-  let newCardButtonContainer = document.createElement("div");
-  newCardButtonContainer.classList.add("new-card-container");
-  newStage.appendChild(newCardButtonContainer);
+/* ---------------------------- MARK TASK AS DONE ---------------------------- */
 
-  let newCardButton = document.createElement("p");
-  newCardButton.classList.add("button");
-  newCardButton.classList.add("add-new-card");
-  newCardButton.innerText = "+ Add new card";
-  newCardButtonContainer.appendChild(newCardButton);
-  newCardButton.addEventListener("click", createNewCard);
-
-  let kanbanContainer = this.parentElement.parentElement.parentElement;
-  kanbanContainer.appendChild(newStage);
-
-  //scroll to bottom
-  kanbanContainer.scrollTo(100000, newStage.scrollWidth);
+function markTaskDone(e) {
+  e.parentElement.parentElement.children[0].classList.toggle("task-done");
 }

@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kanban Component</title>
     <link rel="stylesheet" href="css/style.css" />
-    <script src="js/script.js" defer></script>
+    <script defer src="js/script.js"></script>
+    <script defer src="js/values.json"></script>
   </head>
   <body>
     <header>
@@ -25,57 +26,100 @@
       <div class="kanban-container">
         <div class="kanban-stage">
           <div class="kanban-stage-title">
-            <h3>Board 1</h3>
+            <h3>Stage 1</h3>
           </div>
 
           <div class="kanban-card-container">
             <div class="kanban-card">
-              <h4>Card</h4>
-              <p>
-                Some relevant text in multiple lines. Let's see how this is
-                handled.
-              </p>
+              <p class="task-name">Ovaj zadatak ima dugačak naslov.</p>
+
+              <div class="checkbox-container">
+                <input
+                  type="checkbox"
+                  class="done-checkbox"
+                  onclick="markTaskDone(this)"
+                />
+              </div>
+              <button class="delete-button" onclick="deleteCard(this)">
+                x
+              </button>
             </div>
+
             <div class="kanban-card">
-              <h4>Card</h4>
-              <p>Some relevant text</p>
+              <p class="task-name">asdad</p>
+              <div class="checkbox-container">
+                <input
+                  type="checkbox"
+                  class="done-checkbox"
+                  onclick="markTaskDone(this)"
+                />
+              </div>
+              <button class="delete-button" onclick="deleteCard(this)">
+                x
+              </button>
             </div>
+
             <div class="kanban-card">
-              <h4>Card</h4>
-              <p>Some relevant text</p>
+              <p class="task-name">asdad</p>
+
+              <div class="checkbox-container">
+                <input
+                  type="checkbox"
+                  class="done-checkbox"
+                  onclick="markTaskDone(this)"
+                />
+              </div>
+              <button class="delete-button" onclick="deleteCard(this)">
+                x
+              </button>
             </div>
           </div>
 
           <div class="new-card-container">
-            <p class="button add-new-card">+ Add new card</p>
+            <button onclick="createNewCard(this)" class="button add-new-card">
+              + Add new card
+            </button>
           </div>
         </div>
 
         <div class="kanban-stage">
           <div class="kanban-stage-title">
-            <h3>Board 2</h3>
+            <h3>Stage 2</h3>
           </div>
 
           <div class="kanban-card-container">
             <div class="kanban-card">
-              <h4>Card</h4>
-              <p>Some relevant text</p>
+              <p class="task-name">Card</p>
+              <div class="checkbox-container">
+                <input
+                  type="checkbox"
+                  class="done-checkbox"
+                  onclick="markTaskDone(this)"
+                />
+              </div>
+              <button class="delete-button" onclick="deleteCard(this)">
+                x
+              </button>
             </div>
           </div>
           <div class="new-card-container">
-            <p class="button add-new-card">+ Add new card</p>
+            <button onclick="createNewCard(this)" class="button add-new-card">
+              + Add new card
+            </button>
           </div>
         </div>
 
         <div class="kanban-stage">
           <div class="kanban-stage-title">
-            <h3>Board 3</h3>
+            <h3>Stage 3</h3>
           </div>
 
           <div class="kanban-card-container"></div>
 
           <div class="new-card-container">
-            <p class="button add-new-card">+ Add new card</p>
+            <button onclick="createNewCard(this)" class="button add-new-card">
+              + Add new card
+            </button>
           </div>
         </div>
 

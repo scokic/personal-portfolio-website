@@ -1,11 +1,9 @@
 let pageContent = document.getElementById("page-content");
-// let myName = "Frontend developer";
-// let lastName = "Cokic";
 
 (function () {
   pageContent.insertAdjacentHTML(
     "beforeend",
-    `"<section class="header" id="header">
+    `<section class="header" id="header">
     <div class="container">
       <div class="logo-container nav-container"  id="logo">
         <a href="#">SC</a>
@@ -205,7 +203,7 @@ let pageContent = document.getElementById("page-content");
               <i class="fab fa-js"></i>
             </div>
             <div class="button-container">
-              <a href="./components/Card-Slider/index.html" class="button" target="_blank">Demo</a>
+              <a href="./components/Kanban-Board/index.html" class="button" target="_blank">Demo</a>
               <a href="https://github.com/scokic/personal-portfolio-website/tree/main/components/Card-Slider" class="button github-button" target="_blank">GitHub</a>
             </div>
           </div>
@@ -284,7 +282,7 @@ let pageContent = document.getElementById("page-content");
       <p id="footerMadeInDescription"></p>
       <p id="footerCopyright"></p>
     </div>
-  </section>"
+  </section>
   `
   );
 })();
