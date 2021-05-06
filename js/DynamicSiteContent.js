@@ -244,7 +244,7 @@ let pageContent = document.getElementById("page-content");
 
         <div class="project-card">
           
-          <img src="./img/Modern Card Slider.png" alt="" />
+          <img src="./img/Kanban Board.png" alt="" />
           
           <div class="project-card-info">
           <h3 id="componentsKanbanHeadline"></h3>
@@ -256,7 +256,7 @@ let pageContent = document.getElementById("page-content");
               <i class="fab fa-js"></i>
             </div>
               <div class="button-container">
-                <a href="./components/Card-Slider/index.html" class="button" target="_blank">Demo</a>
+                <a href="./components/Kanban-Board/index.html" class="button" target="_blank">Demo</a>
                 <a href="https://github.com/scokic/personal-portfolio-website/tree/main/components/Kanban-Board" class="button github-button" target="_blank">GitHub</a>
               </div>
             </div>
