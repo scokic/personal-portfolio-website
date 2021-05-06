@@ -34,7 +34,6 @@ function renderSerbianContent() {
 }
 
 function renderContent(language) {
-  console.time("renderNewContent");
   language = fetch(`js/translation/${language}.json`)
     .then((response) => {
       return response.json();
@@ -45,7 +44,6 @@ function renderContent(language) {
         objectProperty.textContent = `${value}`;
       }
     });
-  console.timeEnd("renderNewContent");
 }
 
 renderSerbianContent();

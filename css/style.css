@@ -11,7 +11,7 @@ html {
 
 body {
   --primary: #ffffff;
-  --secondary: hsl(150, 100%, 95%);
+  --secondary: hsl(150, 100%, 97%);
 
   --contrast: hsl(208, 58%, 6%);
   --grey: #7f7f7f30;
@@ -619,6 +619,12 @@ body.en #serbian {
   margin: 15px;
   border-radius: 5px;
   position: relative;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 15px var(--shadow-light);
+}
+
+body.dark .tool-image-placeholder {
+  background-color: #ffffff50;
 }
 
 .tool-image-placeholder:hover {
@@ -636,6 +642,10 @@ body.en #serbian {
   width: 130px;
   height: 130px;
   border-radius: 5px;
+  background-color: #00000025;
+}
+
+body.dark .loading-opacity {
   background-color: #00000099;
 }
 
@@ -687,34 +697,6 @@ body.en #serbian {
 
 .not-loaded {
   opacity: 100%;
-}
-
-@media (prefers-color-scheme: light) {
-  .tool-image-placeholder {
-    background-color: #00000050;
-  }
-
-  .loading {
-    background-color: #00000099;
-  }
-
-  .loading-opacity {
-    background-color: #ffffff99;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .tool-image-placeholder {
-    background-color: #ffffff50;
-  }
-
-  .loading {
-    background-color: #00000099;
-  }
-
-  .loading-opacity {
-    background-color: #00000099;
-  }
 }
 
 /* ------------------------------------ PROJECTS ------------------------------------ */
