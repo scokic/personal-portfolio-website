@@ -31,7 +31,7 @@
 
           <div class="kanban-card-container">
             <div class="kanban-card">
-              <p class="task-name">Ovaj zadatak ima dugačak naslov.</p>
+              <p class="task-name">This is a long multi line task.!</p>
 
               <div class="checkbox-container">
                 <input
@@ -46,7 +46,7 @@
             </div>
 
             <div class="kanban-card">
-              <p class="task-name">asdad</p>
+              <p class="task-name">This is a regular task</p>
               <div class="checkbox-container">
                 <input
                   type="checkbox"
@@ -60,7 +60,23 @@
             </div>
 
             <div class="kanban-card">
-              <p class="task-name">asdad</p>
+              <p class="task-name task-done">This is completed task</p>
+
+              <div class="checkbox-container">
+                <input
+                  type="checkbox"
+                  class="done-checkbox"
+                  checked
+                  onclick="markTaskDone(this)"
+                />
+              </div>
+              <button class="delete-button" onclick="deleteCard(this)">
+                x
+              </button>
+            </div>
+
+            <div class="kanban-card">
+              <p class="task-name">This is new task</p>
 
               <div class="checkbox-container">
                 <input
