@@ -136,6 +136,7 @@ body {
 
   .popular-destinations {
     padding: 0;
+    border-radius: 0px;
   }
 
   .popular-destinations h2 {
