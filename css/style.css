@@ -613,6 +613,8 @@ body.en #serbian {
   margin: auto;
 }
 
+/* image placeholder */
+
 .tool-image-placeholder {
   display: grid;
   place-items: center;
@@ -621,6 +623,7 @@ body.en #serbian {
   position: relative;
   background-color: #ffffff;
   box-shadow: 0px 0px 15px var(--shadow-light);
+  position: relative;
 }
 
 body.dark .tool-image-placeholder {
@@ -631,22 +634,40 @@ body.dark .tool-image-placeholder {
   box-shadow: 0px 0px 30px var(--shadow-dark);
 }
 
-.tool {
+.tool-image {
   height: 90px;
   width: 90px;
   margin: 20px;
 }
 
-.loading-opacity {
-  position: absolute;
-  width: 130px;
-  height: 130px;
-  border-radius: 5px;
-  background-color: #00000025;
+.not-loaded img {
+  -webkit-filter: grayscale(100%);
 }
 
-body.dark .loading-opacity {
-  background-color: #00000099;
+.loading img {
+  display: block;
+  -webkit-filter: grayscale(100%);
+}
+
+.loading::after {
+  position: absolute;
+  content: "";
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  height: calc(60% - 20px);
+  background-size: 90px 90px;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+
+.javascript::after {
+  background-image: url(../img/tools/javascript-logo.svg);
+}
+
+.git::after {
+  height: calc(40% - 20px);
+  background-image: url(../img/tools/git-logo.svg);
 }
 
 .loading-popup {
@@ -683,20 +704,6 @@ body.dark .loading-opacity {
 
 .loading-popup p {
   margin: 0;
-}
-
-.loaded {
-  opacity: 0;
-}
-
-.loading {
-  top: 0;
-  height: 65px;
-  border-radius: 5px 5px 0px 0px;
-}
-
-.not-loaded {
-  opacity: 100%;
 }
 
 /* ------------------------------------ PROJECTS ------------------------------------ */
@@ -798,6 +805,8 @@ body.dark .loading-opacity {
     width: 100%;
     transform: translateY(50px);
     height: 400px;
+    object-fit: cover;
+    object-position: top;
   }
 
   .project-card-info {

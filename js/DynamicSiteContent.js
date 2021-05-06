@@ -72,7 +72,6 @@ let pageContent = document.getElementById("page-content");
     </div>
   </section>
 
-
   <section class="section-container about-me" id="about-me">
     <div class="container">
       <div class="text-container">
@@ -80,68 +79,84 @@ let pageContent = document.getElementById("page-content");
         <p id="aboutDescription"></p>
       </div>   
       <div class="tools-container">
-        <div class="tool-image-placeholder hidden">
-          <div class="loaded loading-opacity"></div>
-          <img src="./img/tools/html5-logo.svg" alt="" class="tool ">
+        <div class="tool-image-placeholder hidden loaded">
+          <img src="./img/tools/html5-logo.svg" alt="" class="tool-image ">
           <div class="loading-popup">
             <p id="aboutHtmlPopup"></p>
           </div>
         </div>
         
-        <div class="tool-image-placeholder hidden">
-          <div class="loaded loading-opacity"></div>
-          <img src="./img/tools/css3-logo.svg" alt="" class="tool ">
+        <div class="tool-image-placeholder hidden loaded">
+          <img src="./img/tools/css3-logo.svg" alt="" class="tool-image">
           <div class="loading-popup">
             <p id="aboutCSSPopup"></p>
           </div>
         </div>
 
-        <div class="tool-image-placeholder hidden">
-          <div class="loading loading-opacity"></div>
-          <img src="./img/tools/javascript-logo.svg" alt="" class="tool">
+        <div class="tool-image-placeholder hidden loading javascript">
+
+          <img src="./img/tools/javascript-logo.svg" alt="" class="tool-image">
           <div class="loading-popup">
             <p id="aboutJSPopup"></p>
           </div>
         </div>
 
-        <div class="tool-image-placeholder hidden">
-          <div class="not-loaded loading-opacity"></div>
-          <img src="./img/tools/react-logo.svg" alt="" class="tool">
+        <div class="tool-image-placeholder hidden not-loaded">
+
+          <img src="./img/tools/react-logo.svg" alt="" class="tool-image">
           <div class="loading-popup">
             <p id="aboutReactPopup"></p>
           </div>
         </div>
 
-        <div class="tool-image-placeholder hidden">
-          <div class="not-loaded loading-opacity"></div>
-          <img src="./img/tools/sass-logo.svg" alt="" class="tool">
+        <div class="tool-image-placeholder hidden not-loaded">
+
+          <img src="./img/tools/sass-logo.svg" alt="" class="tool-image">
           <div class="loading-popup">
             <p id="aboutSaasPopup"></p>
           </div>
         </div>
 
-        <div class="tool-image-placeholder hidden">
-          <div class="not-loaded loading-opacity"></div>
-          <img src="./img/tools/bootstrap-5-logo.svg" alt="" class="tool">
+        <div class="tool-image-placeholder hidden not-loaded">
+
+          <img src="./img/tools/bootstrap-5-logo.svg" alt="" class="tool-image">
           <div class="loading-popup">
             <p id="aboutBootstrapPopup"></p>
           </div>
         </div>
         
-        <div class="tool-image-placeholder hidden">
-          <div class="loaded loading-opacity"></div>
-          <img src="./img/tools/visual-studio-code-logo.svg" alt="" class="tool">
+        <div class="tool-image-placeholder hidden loaded">
+
+          <img src="./img/tools/visual-studio-code-logo.svg" alt="" class="tool-image">
           <div class="loading-popup">
             <p id="aboutVscodePopup"></p>
           </div>
         </div>
-        <div class="tool-image-placeholder hidden">
-          <div class="loading loading-opacity"></div>
-          <img src="./img/tools/git-logo.svg" alt="" class="tool">
+        <div class="tool-image-placeholder hidden loading git">
+
+          <img src="./img/tools/git-logo.svg" alt="" class="tool-image">
           <div class="loading-popup">
             <p id="aboutGitPopup"></p>
           </div>
         </div>
+      </div>     
+      <div class="tools-container">
+        <div class="tool-image-placeholder hidden loaded">
+          <img src="./img/tools/html5-logo.svg" alt="" class="tool-image ">
+          <div class="loading-popup">
+            <p id="aboutHtmlPopup"></p>
+          </div>
+        </div>
+        
+        <div class="tool-image-placeholder hidden loaded">
+          <img src="./img/tools/css3-logo.svg" alt="" class="tool-image">
+          <div class="loading-popup">
+            <p id="aboutCSSPopup"></p>
+          </div>
+        </div>
+
+        
+        
       </div>     
     </div>
   </section>
