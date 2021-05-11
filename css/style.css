@@ -275,6 +275,13 @@ p {
     padding: 15px 30vw !important;
   }
 
+  #nav-button-container {
+    display: block;
+    max-width: 80vw;
+    width: 80vw;
+    text-align: center;
+  }
+
   /* ------------------------------------ HAMBURGER ANIMATION ------------------------------------ */
 
   .nav-open .bar-1 {
@@ -709,17 +716,17 @@ body.dark .tool-image-placeholder {
 /* ------------------------------------ PROJECTS ------------------------------------ */
 
 .projects,
-.components {
+.wordpress-websites {
   overflow: hidden;
 }
 
 .projects h2,
-.components h2 {
+.wordpress-websites h2 {
   margin-bottom: 25px;
 }
 
 .projects .container,
-.components .container {
+.wordpress-websites .container {
   display: block;
 }
 
@@ -747,6 +754,9 @@ body.dark .tool-image-placeholder {
 
 .project-card img {
   width: 50%;
+  max-height: 550px;
+  object-fit: cover;
+  object-position: top;
   transform: translateX(25px);
   border-radius: 10px;
 }
@@ -783,6 +793,18 @@ body.dark .tool-image-placeholder {
 
 .project-card .github-button {
   margin-left: 10px;
+}
+
+#projectsPortfolioButton {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+.wordpress-websites .button {
+  display: block;
+  text-align: center;
 }
 
 @media screen and (max-width: 1000px) {
@@ -825,6 +847,72 @@ body.dark .tool-image-placeholder {
     text-align: center;
     margin-top: 5px;
     margin-left: 0;
+  }
+}
+
+/* ------------------------------------ TEST IPHONE MOCKUP ------------------------------------ */
+
+.iphone-x {
+  position: relative;
+  margin: 40px auto;
+  width: calc(360px * 0.7);
+  height: calc(780px * 0.7);
+  background-size: cover;
+  background-position-y: 20px;
+  background-repeat: no-repeat;
+  border-radius: 25px;
+  box-shadow: 0px 0px 0px 9px #1f1f1f, 0px 0px 0px 10px #191919,
+    0px 0px 0px 15px #111;
+  transform: translateX(25px);
+}
+
+.digitalnakancelarija {
+  background-color: #f9fafb;
+  background-image: url("../img/DigitalnaKancelarija.png");
+}
+.pobedimoastmu {
+  background-color: white;
+  background-image: url("../img/PobedimoAstmu.png");
+}
+.medana {
+  background-color: #0a0a0a;
+  background-image: url("../img/Medana.png");
+}
+
+.iphone-x:before,
+.iphone-x:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.iphone-x:after {
+  bottom: 7px;
+  width: 140px;
+  height: 4px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+}
+
+.iphone-x:before {
+  top: 0px;
+  width: 56%;
+  height: 20px;
+  background-color: #1f1f1f;
+  border-radius: 0px 0px 40px 40px;
+}
+
+@media only screen and (max-width: 700px) {
+  .iphone-x {
+    transform: translate(0);
+    width: calc(360px * 0.8);
+    height: calc(780px * 0.8);
+  }
+
+  .wordpress-websites .project-card-info {
+    max-width: 80%;
+    transform: translateY(-150px);
   }
 }
 
@@ -881,6 +969,13 @@ body.dark .tool-image-placeholder {
 
   .contact p {
     max-width: 90%;
+  }
+
+  .contact .button {
+    display: block;
+    max-width: 80%;
+    width: 80%;
+    text-align: center;
   }
 }
 

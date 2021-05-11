@@ -11,11 +11,11 @@ let pageContent = document.getElementById("page-content");
 
       <div class="nav-links nav-container">
         <ul class="nav">
-          <li><a id="navHome" class="nav-link" href="#hero">Home</a></li>
-          <li><a id="navAbout" class="nav-link" href="#about-me">O meni</a></li>
-          <li><a id="navProjects" class="nav-link" href="#projects">Projekti</a></li>
-          <li><a id="navComponents" class="nav-link" href="#components">Komponente</a></li>
-          <li><a id="navContact" class="button nav-button nav-link contact-button" id="nav-contact-button" href="#contact">Kontakt</a></li>
+          <li><a id="navHome" class="nav-link" href="#hero"></a></li>
+          <li><a id="navAbout" class="nav-link" href="#about-me"></a></li>
+          <li><a id="navProjects" class="nav-link" href="#projects"></a></li>
+          <li><a id="navWordpressWebsites" class="nav-link" href="#wordpressWebsites"></a></li>
+          <li id="nav-button-container"><a id="navContact" class="button nav-button nav-link contact-button" id="nav-contact-button" href="#contact"></a></li>
         </ul>
       </div>
 
@@ -139,25 +139,7 @@ let pageContent = document.getElementById("page-content");
             <p id="aboutGitPopup"></p>
           </div>
         </div>
-      </div>     
-      <div class="tools-container">
-        <div class="tool-image-placeholder hidden loaded">
-          <img src="./img/tools/html5-logo.svg" alt="" class="tool-image ">
-          <div class="loading-popup">
-            <p id="aboutHtmlPopup"></p>
-          </div>
-        </div>
-        
-        <div class="tool-image-placeholder hidden loaded">
-          <img src="./img/tools/css3-logo.svg" alt="" class="tool-image">
-          <div class="loading-popup">
-            <p id="aboutCSSPopup"></p>
-          </div>
-        </div>
-
-        
-        
-      </div>     
+      </div>    
     </div>
   </section>
 
@@ -169,7 +151,7 @@ let pageContent = document.getElementById("page-content");
       <div class="project-cards-container">
         <div class="project-card">
           
-          <img src="./img/Project.png" alt="" />
+          <img src="./img/PersonalPortfolio.png" alt="" />
           
           <div class="project-card-info">
             <h3 id="projectsPortfolioHeadline"></h3>
@@ -181,29 +163,23 @@ let pageContent = document.getElementById("page-content");
               <i class="fab fa-js"></i>
             </div>
             <div class="button-container">
-            <a href="./components/Card-Slider/index.html" class="button" target="_blank">Demo</a>
-            <a href="https://github.com/scokic/personal-portfolio-website/tree/main/components/Card-Slider" class="button github-button" target="_blank">GitHub</a>
+            <a href="https://github.com/scokic/personal-portfolio-website/" class="button github-button" target="_blank" id="projectsPortfolioButton">GitHub</a>
           </div>
           </div>
         </div>
 
         <div class="project-card">
-          
-          <img src="./img/Project.png" alt="" />
-          
+          <img src="./img/Kanban Board.png" alt="" />
           <div class="project-card-info">
-          <h3 id="projectsNotesAppHeadline"></h3>
-          <p id="projectsNotesAppDescription"></p>
+          <h3 id="projectsKanbanHeadline"></h3>
+          <p id="projectsKanbanDescription"></p>
             <br />
             <div class="project-used-tech">
-              <i class="fab fa-html5"></i>
-              <i class="fab fa-css3-alt"></i>
               <i class="fab fa-js"></i>
-              <i class="fab fa-gripfire"></i>
             </div>
             <div class="button-container">
-              <a href="./components/Card-Slider/index.html" class="button" target="_blank">Demo</a>
-              <a href="https://github.com/scokic/personal-portfolio-website/tree/main/components/Card-Slider" class="button github-button" target="_blank">GitHub</a>
+              <a href="./components/Kanban-Board/index.html" class="button" target="_blank">Demo</a>
+              <a href="https://github.com/scokic/personal-portfolio-website/tree/main/components/Kanban-Board" class="button github-button" target="_blank">GitHub</a>
             </div>
           </div>
         </div>
@@ -218,64 +194,105 @@ let pageContent = document.getElementById("page-content");
               <i class="fab fa-js"></i>
             </div>
             <div class="button-container">
-              <a href="./components/Kanban-Board/index.html" class="button" target="_blank">Demo</a>
-              <a href="https://github.com/scokic/personal-portfolio-website/tree/main/components/Card-Slider" class="button github-button" target="_blank">GitHub</a>
+              <a href="./wordpress-websites/Kanban-Board/index.html" class="button" target="_blank">Demo</a>
+              <a href="https://github.com/scokic/personal-portfolio-website/tree/main/wordpress-websites/Card-Slider" class="button github-button" target="_blank">GitHub</a>
             </div>
           </div>
         </div>
+        
+        <div class="project-card">
+          <img src="./img/TodoApp.png" alt="" />
+          <div class="project-card-info">
+          <h3 id="projectsTodoAppHeadline"></h3>
+          <p id="projectsTodoAppDescription"></p>
+            <br />
+            <div class="project-used-tech">
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-css3-alt"></i>
+              <i class="fab fa-js"></i>
+            </div>
+            <div class="button-container">
+              <a href="https://scokic.github.io/simpletodoapp/" class="button" target="_blank">Demo</a>
+              <a href="https://github.com/scokic/simpletodoapp" class="button github-button" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <section class="section-container components" id="components">
+  <section class="section-container wordpress-websites" id="wordpressWebsites">
     <div class="container">
       <div id="headline-container">
-        <h2 id="componentsHeadline"></h2>
+        <h2 id="wordpressWebsitesHeadline"></h2>
       </div>
       <div class="project-cards-container">
         <div class="project-card">
           
-          <img src="./img/Modern Card Slider.png" alt="" />
+          <div class="iphone-x digitalnakancelarija">
+          </div>
           
           <div class="project-card-info">
-            <h3 id="componentsSliderHeadline"></h3>
-            <p id="componentsSliderDescription"></p>
+            <h3 id="wordpressWebsitesDigitalnaKancelarijaHeadline"></h3>
+            <p id="wordpressWebsitesDigitalnaKancelarijaDescription"></p>
             <br />
             <div class="project-used-tech">
-              <i class="fab fa-html5"></i>
+              <i class="fab fa-wordpress"></i>
               <i class="fab fa-css3-alt"></i>
               <i class="fab fa-js"></i>
             </div>
             
             <div class="button-container">
-              <a href="./components/Card-Slider/index.html" class="button" target="_blank">Demo</a>
-              <a href="https://github.com/scokic/personal-portfolio-website/tree/main/components/Card-Slider" class="button github-button" target="_blank">GitHub</a>
+              <a id="wordpressWebsitesButtonDK"  href="https://www.digitalnakancelarija.rs"" class="button" target="_blank"></a>
             </div>
 
           </div>
         </div>
-      
 
 
         <div class="project-card">
           
-          <img src="./img/Kanban Board.png" alt="" />
+        <div class="iphone-x pobedimoastmu">
+        </div>
           
           <div class="project-card-info">
-          <h3 id="componentsKanbanHeadline"></h3>
-          <p id="componentsKanbanDescription"></p>
+          <h3 id="wordpressWebsitesPobedimoAstmuHeadline"></h3>
+          <p id="wordpressWebsitesPobedimoAstmuDescription"></p>
             <br />
             <div class="project-used-tech">
-              <i class="fab fa-html5"></i>
+              <i class="fab fa-wordpress"></i>
+              <i class="fab fa-mailchimp"></i>
               <i class="fab fa-css3-alt"></i>
-              <i class="fab fa-js"></i>
             </div>
               <div class="button-container">
-                <a href="./components/Kanban-Board/index.html" class="button" target="_blank">Demo</a>
-                <a href="https://github.com/scokic/personal-portfolio-website/tree/main/components/Kanban-Board" class="button github-button" target="_blank">GitHub</a>
+                <a id="wordpressWebsitesButtonPA"  href="https://www.pobedimoastmu.rs"" class="button" target="_blank"></a>
               </div>
             </div>
         </div>
+
+
+        <div class="project-card">
+          
+        <div class="iphone-x medana">
+        </div>
+
+          <div class="project-card-info">
+          <h3 id="wordpressWebsitesMedanaHeadline"></h3>
+          <p id="wordpressWebsitesMedanaDescription"></p>
+            <br />
+            <div class="project-used-tech">
+              <i class="fab fa-wordpress"></i>
+              <i class="fab fa-mailchimp"></i>
+              <i class="fas fa-shopping-basket"></i>
+            </div>
+              <div class="button-container">
+                <a id="wordpressWebsitesButtonMd" href="https://www.medana.rs" class="button" target="_blank"></a>
+              </div>
+            </div>
+        </div>
+
+        
       </div>
     </div>
   </section>
