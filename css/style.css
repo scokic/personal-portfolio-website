@@ -662,19 +662,29 @@ body.dark .tool-image-placeholder {
   bottom: 20px;
   left: 0;
   width: 100%;
-  height: calc(60% - 20px);
   background-size: 90px 90px;
   background-position: bottom center;
   background-repeat: no-repeat;
 }
 
 .javascript::after {
+  height: calc(70% - 20px);
   background-image: url(../img/tools/javascript-logo.svg);
 }
 
+.react::after {
+  height: calc(50% - 20px);
+  background-image: url(../img/tools/react-logo.svg);
+}
+
 .git::after {
-  height: calc(40% - 20px);
+  height: calc(50% - 20px);
   background-image: url(../img/tools/git-logo.svg);
+}
+
+.sass::after {
+  height: calc(40% - 20px);
+  background-image: url(../img/tools/sass-logo.svg);
 }
 
 .loading-popup {

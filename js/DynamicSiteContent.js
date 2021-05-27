@@ -101,7 +101,7 @@ let pageContent = document.getElementById("page-content");
           </div>
         </div>
 
-        <div class="tool-image-placeholder hidden not-loaded">
+        <div class="tool-image-placeholder hidden loading react">
 
           <img src="./img/tools/react-logo.svg" alt="" class="tool-image">
           <div class="loading-popup">
@@ -109,11 +109,11 @@ let pageContent = document.getElementById("page-content");
           </div>
         </div>
 
-        <div class="tool-image-placeholder hidden not-loaded">
+        <div class="tool-image-placeholder hidden loading sass">
 
           <img src="./img/tools/sass-logo.svg" alt="" class="tool-image">
           <div class="loading-popup">
-            <p id="aboutSaasPopup"></p>
+            <p id="aboutSassPopup"></p>
           </div>
         </div>
 
@@ -149,13 +149,31 @@ let pageContent = document.getElementById("page-content");
         <h2 id="projectsHeadline"></h2>
       </div>
       <div class="project-cards-container">
-        <div class="project-card">
-          
-          <img src="./img/PersonalPortfolio.png" alt="" />
-          
+
+      <div class="project-card">
+        
+        <img src="./img/PersonalPortfolio.png" alt="" />
+        
+        <div class="project-card-info">
+          <h3 id="projectsPortfolioHeadline"></h3>
+          <p id="projectsPortfolioDescription"></p>
+          <br />
+          <div class="project-used-tech">
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <i class="fab fa-js"></i>
+          </div>
+          <div class="button-container">
+          <a href="https://github.com/scokic/personal-portfolio-website/" class="button github-button" target="_blank" id="projectsPortfolioButton">GitHub</a>
+        </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+          <img src="./img/TodoApp.png" alt="" />
           <div class="project-card-info">
-            <h3 id="projectsPortfolioHeadline"></h3>
-            <p id="projectsPortfolioDescription"></p>
+          <h3 id="projectsTodoAppHeadline"></h3>
+          <p id="projectsTodoAppDescription"></p>
             <br />
             <div class="project-used-tech">
               <i class="fab fa-html5"></i>
@@ -163,10 +181,13 @@ let pageContent = document.getElementById("page-content");
               <i class="fab fa-js"></i>
             </div>
             <div class="button-container">
-            <a href="https://github.com/scokic/personal-portfolio-website/" class="button github-button" target="_blank" id="projectsPortfolioButton">GitHub</a>
-          </div>
+              <a href="https://scokic.github.io/simpletodoapp/" class="button" target="_blank">Demo</a>
+              <a href="https://github.com/scokic/simpletodoapp" class="button github-button" target="_blank">GitHub</a>
+            </div>
           </div>
         </div>
+
+
 
         <div class="project-card">
           <img src="./img/Kanban Board.png" alt="" />
@@ -200,23 +221,6 @@ let pageContent = document.getElementById("page-content");
           </div>
         </div>
         
-        <div class="project-card">
-          <img src="./img/TodoApp.png" alt="" />
-          <div class="project-card-info">
-          <h3 id="projectsTodoAppHeadline"></h3>
-          <p id="projectsTodoAppDescription"></p>
-            <br />
-            <div class="project-used-tech">
-              <i class="fab fa-html5"></i>
-              <i class="fab fa-css3-alt"></i>
-              <i class="fab fa-js"></i>
-            </div>
-            <div class="button-container">
-              <a href="https://scokic.github.io/simpletodoapp/" class="button" target="_blank">Demo</a>
-              <a href="https://github.com/scokic/simpletodoapp" class="button github-button" target="_blank">GitHub</a>
-            </div>
-          </div>
-        </div>
 
       </div>
     </div>

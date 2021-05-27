@@ -1,6 +1,6 @@
-// "use strict";
+"use strict";
 
-// Mobile menu dropdown
+// -------------------------------------------- MOBILE MENU DROPDOWN --------------------------------------------
 
 let hamburger = document.querySelector(".hamburger");
 let header = document.querySelector(".header");
@@ -29,12 +29,10 @@ function stickyOnScroll() {
   }
 }
 
-// When the user scrolls down 20px from the top of the document, show the button
-
 let scrollTopButton = document.querySelector(".scroll-to-top");
 let scrollTopContainer = document.querySelector(".scroll-to-top-container");
 
-// Scroll to top button
+// -------------------------------------------- SCROLL TO TOP BUTTON --------------------------------------------
 
 scrollTopButton.addEventListener("click", () => {
   document.body.scrollTop = 0; // for Safari
@@ -49,8 +47,8 @@ function scrollToTop() {
   }
 }
 
-// POTREBNO SMISLITI DRUGO REŠENJE ZA OVO
-// Hover tool popup
+// TODO: IMPROVE EXISTING SOLUTION
+// -------------------------------------------- HOVER TOOL POPUP --------------------------------------------
 
 const loadingPlaceholder = document.querySelectorAll(".tool-image-placeholder");
 
@@ -66,7 +64,7 @@ loadingPlaceholder.forEach((item) => {
   });
 });
 
-// Scroll to section
+// -------------------------------------------- SCROLL TO SECTION --------------------------------------------
 
 let navButton = document.querySelectorAll(".nav-link");
 let isMobile = window.matchMedia("only screen and (max-width: 800px)").matches;
