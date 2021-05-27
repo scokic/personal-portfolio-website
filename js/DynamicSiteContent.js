@@ -196,6 +196,8 @@ let pageContent = document.getElementById("page-content");
           <p id="projectsKanbanDescription"></p>
             <br />
             <div class="project-used-tech">
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
               <i class="fab fa-js"></i>
             </div>
             <div class="button-container">
@@ -206,7 +208,7 @@ let pageContent = document.getElementById("page-content");
         </div>
 
         <div class="project-card">
-          <img src="./img/Project.png" alt="" />
+          <img src="./img/Two Player Dice Game.png" alt="" />
           <div class="project-card-info">
           <h3 id="projectsDiceGameHeadline"></h3>
           <p id="projectsDiceGameDescription"></p>
@@ -215,8 +217,8 @@ let pageContent = document.getElementById("page-content");
               <i class="fab fa-js"></i>
             </div>
             <div class="button-container">
-              <a href="./wordpress-websites/Kanban-Board/index.html" class="button" target="_blank">Demo</a>
-              <a href="https://github.com/scokic/personal-portfolio-website/tree/main/wordpress-websites/Card-Slider" class="button github-button" target="_blank">GitHub</a>
+              <a href="./components/Two Player Dice Game/index.html" class="button" target="_blank">Demo</a>
+              <a href="https://github.com/scokic/personal-portfolio-website/tree/main/components/Two Player Dice Game" class="button github-button" target="_blank">GitHub</a>
             </div>
           </div>
         </div>
