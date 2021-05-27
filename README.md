@@ -19,4 +19,4 @@ So far I've mostly learned HTML, CSS, and JavaScript, so website has been built 
 - HTML
 - CSS
 - JavaScript
-- GitHub
+- Git
