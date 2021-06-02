@@ -9,7 +9,7 @@ const serbianTranslation = {
   headerOccupation: "frontend developer",
   headerDescription:
     "Ja sam projekt menadžer koji želi da postane frontend developer. Pored toga volim tehnologiju i aplikacije, grafički dizajn i rad sa ljudima. Ako vam zvučim zanimljivo nastavite da čitate! 😀",
-  headerButton: "Kontakt",
+  headerButton: "Kontaktiraj me",
 
   aboutHeader: "O meni",
   aboutDescription:

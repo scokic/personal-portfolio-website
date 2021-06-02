@@ -53,6 +53,7 @@ body {
 .header-wrapper {
   background: var(--white);
   border-radius: 5px;
+  padding: 10px 20px;
   box-shadow: 0px 5px 5px var(--shadow);
 }
 
@@ -92,6 +93,11 @@ body {
   align-items: flex-start;
 }
 
+.stage-container {
+  display: flex;
+  gap: 25px;
+}
+
 .kanban-stage {
   background-color: var(--light-grey);
   padding: 15px;
@@ -115,7 +121,7 @@ body {
   -webkit-column-gap: 25px;
   overflow-y: auto;
   overflow-x: hidden;
-  max-height: calc(100vh - 350px);
+  max-height: calc(100vh - 400px);
 }
 
 .kanban-card {
@@ -193,11 +199,33 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .kanban-container {
+  .stage-container {
     scroll-snap-type: x mandatory;
   }
 
   .kanban-stage {
     scroll-snap-align: center;
   }
+}
+
+.form-input {
+  outline: none;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin: 0;
+  transition: 0.1s ease;
+  background-color: #ffffff22;
+}
+
+.form-input:focus-within {
+  border-color: grey;
+  box-shadow: 0px 0px 15px #d3d3d350;
+  background-color: #ffffff;
+}
+
+.new-task-name {
+  width: 270px;
+  box-sizing: border-box;
+  margin-top: 15px;
 }

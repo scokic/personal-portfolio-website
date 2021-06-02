@@ -435,13 +435,21 @@ body.en #serbian {
 .hero {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 5vh 25px;
+  padding: 125px 25px;
 }
 
 .hero {
   padding-top: 10vh;
+  padding-bottom: 5vh;
   background-color: var(--background-lg);
   max-width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .section-container {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
 }
 
 .hero h3 {
@@ -504,16 +512,16 @@ body.en #serbian {
   border-radius: 500px;
   top: -2vw;
   left: 0;
-  height: 30vw;
-  width: 15vw;
+  height: 75%;
+  width: 40%;
   z-index: -1;
 }
 
 .square {
   border: solid 3px blue;
   border-radius: 25px;
-  height: 20vw;
-  width: 20vw;
+  height: 60%;
+  width: 60%;
   bottom: -4vw;
   right: 0;
   z-index: -1;
@@ -522,8 +530,8 @@ body.en #serbian {
 .circle {
   border: solid 3px green;
   border-radius: 250px;
-  height: 26vw;
-  width: 26vw;
+  height: 60%;
+  width: 60%;
   right: -2vw;
   top: -2vw;
   z-index: -1;

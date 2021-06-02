@@ -72,11 +72,6 @@ let isMobile = window.matchMedia("only screen and (max-width: 800px)").matches;
 navButton.forEach((item) => {
   let scrollBlockTarget;
   scrollBlockTarget = "start";
-  // if (isMobile) {
-  //   scrollBlockTarget = "start";
-  // } else {
-  //   scrollBlockTarget = "center";
-  // }
 
   item.addEventListener("click", function (e) {
     e.preventDefault();

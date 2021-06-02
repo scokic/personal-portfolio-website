@@ -309,7 +309,7 @@ let pageContent = document.getElementById("page-content");
       <h3 id="contactSubHeadline"></h3>
       <h2 id="contactHeadline"></h2>
       <p id="contactDescription"></p>
-      <a id="contactButton" href="https://www.linkedin.com/in/strahinjacokic/" class="button"></a>
+      <a id="contactButton" target="_blank" href="https://www.linkedin.com/in/strahinjacokic/" class="button"></a>
     </div>
   </section>
 

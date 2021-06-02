@@ -36,4 +36,4 @@ function renderContent(language) {
   }
 }
 
-renderSerbianContent();
+renderEnglishContent();

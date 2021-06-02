@@ -7,13 +7,12 @@
     <title>Kanban Component</title>
     <link rel="stylesheet" href="css/style.css" />
     <script defer src="js/script.js"></script>
-    <script defer src="js/values.json"></script>
   </head>
   <body>
     <header>
       <div class="title">
         <div class="header-wrapper">
-          <h1>Naslov</h1>
+          <h1>Simple Project Management</h1>
         </div>
       </div>
       <div class="subheader">
@@ -24,124 +23,13 @@
     </header>
     <main>
       <div class="kanban-container">
-        <div class="kanban-stage">
-          <div class="kanban-stage-title">
-            <h3>Stage 1</h3>
-          </div>
-
-          <div class="kanban-card-container">
-            <div class="kanban-card">
-              <p class="task-name">This is a long multi line task.!</p>
-
-              <div class="checkbox-container">
-                <input
-                  type="checkbox"
-                  class="done-checkbox"
-                  onclick="markTaskDone(this)"
-                />
-              </div>
-              <button class="delete-button" onclick="deleteCard(this)">
-                x
-              </button>
-            </div>
-
-            <div class="kanban-card">
-              <p class="task-name">This is a regular task</p>
-              <div class="checkbox-container">
-                <input
-                  type="checkbox"
-                  class="done-checkbox"
-                  onclick="markTaskDone(this)"
-                />
-              </div>
-              <button class="delete-button" onclick="deleteCard(this)">
-                x
-              </button>
-            </div>
-
-            <div class="kanban-card">
-              <p class="task-name task-done">This is completed task</p>
-
-              <div class="checkbox-container">
-                <input
-                  type="checkbox"
-                  class="done-checkbox"
-                  checked
-                  onclick="markTaskDone(this)"
-                />
-              </div>
-              <button class="delete-button" onclick="deleteCard(this)">
-                x
-              </button>
-            </div>
-
-            <div class="kanban-card">
-              <p class="task-name">This is new task</p>
-
-              <div class="checkbox-container">
-                <input
-                  type="checkbox"
-                  class="done-checkbox"
-                  onclick="markTaskDone(this)"
-                />
-              </div>
-              <button class="delete-button" onclick="deleteCard(this)">
-                x
-              </button>
-            </div>
-          </div>
-
-          <div class="new-card-container">
-            <button onclick="createNewCard(this)" class="button add-new-card">
-              + Add new card
-            </button>
-          </div>
-        </div>
-
-        <div class="kanban-stage">
-          <div class="kanban-stage-title">
-            <h3>Stage 2</h3>
-          </div>
-
-          <div class="kanban-card-container">
-            <div class="kanban-card">
-              <p class="task-name">Card</p>
-              <div class="checkbox-container">
-                <input
-                  type="checkbox"
-                  class="done-checkbox"
-                  onclick="markTaskDone(this)"
-                />
-              </div>
-              <button class="delete-button" onclick="deleteCard(this)">
-                x
-              </button>
-            </div>
-          </div>
-          <div class="new-card-container">
-            <button onclick="createNewCard(this)" class="button add-new-card">
-              + Add new card
-            </button>
-          </div>
-        </div>
-
-        <div class="kanban-stage">
-          <div class="kanban-stage-title">
-            <h3>Stage 3</h3>
-          </div>
-
-          <div class="kanban-card-container"></div>
-
-          <div class="new-card-container">
-            <button onclick="createNewCard(this)" class="button add-new-card">
-              + Add new card
-            </button>
-          </div>
-        </div>
-
+        <div class="stage-container"></div>
         <div class="kanban-stage new-stage-container">
           <div class="kanban-card new-card-container">
-            <p class="button new-stage-button">+ Add new stage</p>
+            <form>
+              <input type="text" class="new-stage-name form-input" />
+              <button class="button new-stage-button">+ Add new stage</button>
+            </form>
           </div>
         </div>
       </div>

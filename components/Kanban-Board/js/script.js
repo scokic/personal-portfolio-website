@@ -1,5 +1,26 @@
 "use strict";
 
+/* ---------------------------- TASKS OBJECT ---------------------------- */
+
+let tasks = [
+  {
+    stageName: "Backlog",
+    stageId: 1,
+    taskList: [
+      { taskId: "t1", taskName: "name 1", status: "" },
+      { taskId: "t2", taskName: "name 2", status: "" },
+    ],
+  },
+  {
+    stageName: "Up next",
+    stageId: 2,
+    taskList: [
+      { taskId: "t3", taskName: "name 3", status: "" },
+      { taskId: "t4", taskName: "name 4", status: "" },
+    ],
+  },
+];
+
 /* ---------------------------- CREATE NEW CARD ON BOARD ---------------------------- */
 
 let newCardButtons = document.querySelectorAll(".add-new-card");
@@ -7,12 +28,20 @@ let kanbanStage = document.querySelector(".kanban-card-container");
 let kanbanCard = document.querySelector(".kanban-card");
 
 function createNewCard(e) {
+  event.preventDefault();
   const cardContainer = e.parentElement.parentElement.children[1];
 
-  cardContainer.insertAdjacentHTML(
-    "beforeEnd",
-    `<div class="kanban-card">
-      <p class="task-name">New task</p>
+  let currentStage = event.target.parentElement.parentElement;
+  let currentStageId = currentStage.id;
+
+  let newTaskNameInput = event.target.parentElement.children[0];
+  let newTaskName = newTaskNameInput.value;
+
+  if (newTaskName !== "") {
+    cardContainer.insertAdjacentHTML(
+      "beforeEnd",
+      `<div class="kanban-card">
+      <p class="task-name">${newTaskName}</p>
       <div class="checkbox-container">
         <input
           type="checkbox"
@@ -24,9 +53,10 @@ function createNewCard(e) {
         x
       </button>
     </div>`
-  );
-
-  cardContainer.scrollTo(10000, kanbanStage.scrollHeight);
+    );
+    newTaskNameInput.value = "";
+    cardContainer.scrollTo(0, 10000);
+  }
 }
 
 /* ---------------------------- REMOVE CARD ---------------------------- */
@@ -38,30 +68,58 @@ function deleteCard(e) {
 /* ---------------------------- CREATE NEW STAGE ON BOARD ---------------------------- */
 
 let newStageButton = document.querySelector(".new-stage-button");
-let kanbanContainer = document.querySelector(".kanban-container");
+let stageContainer = document.querySelector(".stage-container");
 let newStageContainer = document.querySelector(".new-stage-container");
 
 newStageButton.addEventListener("click", createNewStage);
 
 function createNewStage() {
-  newStageContainer.insertAdjacentHTML(
-    "beforeBegin",
+  event.preventDefault();
+  let newStageName = document.querySelector(".new-stage-name");
+  let newStageNameValue = newStageName.value;
+
+  if (!newStageNameValue) {
+    return;
+  }
+
+  let stageMaxId = 0;
+  (function maxId() {
+    tasks.forEach((task) => {
+      if (task.stageId > stageMaxId) {
+        stageMaxId = task.stageId;
+      }
+    });
+  })();
+
+  let newStageId = stageMaxId + 1;
+
+  tasks.push({
+    stageName: `${newStageNameValue}`,
+    stageId: newStageId,
+    taskList: [],
+  });
+
+  stageContainer.insertAdjacentHTML(
+    "beforeend",
     `<div class="kanban-stage">
     <div class="kanban-stage-title">
-      <h3>Stage 3</h3>
+      <h3>${newStageNameValue}</h3>
     </div>
 
     <div class="kanban-card-container"></div>
 
-    <div class="new-card-container">
+    <form class="new-card-container">
+      <input type="text" class="new-task-name form-input" />
       <button onclick="createNewCard(this)" class="button add-new-card">
         + Add new card
       </button>
-    </div>
+    </form>
+    
   </div>`
   );
+  newStageName.value = "";
 
-  kanbanContainer.scrollTo(100000, 0);
+  stageContainer.scrollTo(10000, 0);
 }
 
 /* ---------------------------- MARK TASK AS DONE ---------------------------- */
@@ -69,3 +127,78 @@ function createNewStage() {
 function markTaskDone(e) {
   e.parentElement.parentElement.children[0].classList.toggle("task-done");
 }
+
+/* ---------------------------- TASK & STAGE READING ---------------------------- */
+
+function readStages() {
+  tasks.map((stage) => {
+    stageContainer.insertAdjacentHTML(
+      "beforeend",
+      `
+      <div class="kanban-stage" id="${stage.stageId}">    
+        <div class="kanban-stage-title">
+            <h3>${stage.stageName}</h3>
+          </div>
+          
+          <div class="kanban-card-container">
+          </div>
+
+          <form class="new-card-container">
+            <input type="text" class="new-task-name form-input" />
+            <button onclick="createNewCard(this)" class="button add-new-card">
+              + Add new card
+            </button>
+          </form>
+          
+      </div>
+    `
+    );
+  });
+}
+readStages();
+
+function readTasks() {
+  let StageDOM = document.querySelectorAll(".kanban-stage");
+
+  StageDOM.forEach((stage) => {
+    if (stage.id !== "") {
+      let stageId = stage.id;
+      let tasksContainer = stage.children[1];
+
+      let stageObj = tasks.find((stage) => stage.stageId == stageId);
+      let stageTasks = stageObj.taskList;
+
+      // prikazivanje taskova na frontu
+
+      stageTasks.map((task) => {
+        tasksContainer.insertAdjacentHTML(
+          "beforeend",
+
+          `
+      
+            <div class="kanban-card">
+              <p class="task-name">${task.taskName}</p>
+
+              <div class="checkbox-container">
+                <input
+                  type="checkbox"
+                  class="done-checkbox"
+                  onclick="markTaskDone(this)"
+                />
+              </div>
+
+              <button class="delete-button" onclick="deleteCard(this)">
+                x
+              </button>
+            </div>
+
+      `
+        );
+      });
+    } else {
+      return;
+    }
+  });
+}
+
+readTasks();
