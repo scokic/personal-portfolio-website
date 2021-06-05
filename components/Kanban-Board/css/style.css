@@ -19,6 +19,10 @@ body {
   margin: 0;
 }
 
+input {
+  font-size: 16px;
+}
+
 /* ---------------------------- HORIZONTAL SLIDER CUSTOM SCROLLBAR ----------------------------*/
 
 ::-webkit-scrollbar {
@@ -90,12 +94,12 @@ body {
   gap: 25px;
   -webkit-column-gap: 25px;
   overflow-x: auto;
-  align-items: flex-start;
 }
 
 .stage-container {
   display: flex;
   gap: 25px;
+  align-items: flex-start;
 }
 
 .kanban-stage {
@@ -121,7 +125,9 @@ body {
   -webkit-column-gap: 25px;
   overflow-y: auto;
   overflow-x: hidden;
-  max-height: calc(100vh - 400px);
+  max-height: calc(100vh - 350px);
+  padding: 5px;
+  padding-bottom: 10px;
 }
 
 .kanban-card {
@@ -157,13 +163,18 @@ body {
 }
 
 .new-stage-container {
+  padding-top: 0;
   background-color: var(--white);
   box-shadow: none;
 }
 
 .new-stage-container .new-card-container {
   box-shadow: none;
-  width: 200px;
+  width: 270px;
+}
+
+.new-card-container .form-input {
+  width: 100%;
 }
 
 .button {
@@ -210,16 +221,17 @@ body {
 
 .form-input {
   outline: none;
-  border: 1px solid lightgrey;
   border-radius: 5px;
   padding: 10px 15px;
   margin: 0;
   transition: 0.1s ease;
-  background-color: #ffffff22;
+  border: 1px solid transparent;
+  background-color: transparent;
+  border: none;
 }
 
 .form-input:focus-within {
-  border-color: grey;
+  border-color: lightgrey;
   box-shadow: 0px 0px 15px #d3d3d350;
   background-color: #ffffff;
 }
@@ -228,4 +240,9 @@ body {
   width: 270px;
   box-sizing: border-box;
   margin-top: 15px;
+}
+
+.add-new-card,
+.new-stage-button {
+  display: none;
 }

@@ -7,8 +7,8 @@ let tasks = [
     stageName: "Backlog",
     stageId: 1,
     taskList: [
-      { taskId: "t1", taskName: "name 1", status: "" },
-      { taskId: "t2", taskName: "name 2", status: "" },
+      { taskId: "t1", taskName: "Uncompleted task", status: "" },
+      { taskId: "t2", taskName: "Completed task", status: "done" },
     ],
   },
   {
@@ -109,7 +109,7 @@ function createNewStage() {
     <div class="kanban-card-container"></div>
 
     <form class="new-card-container">
-      <input type="text" class="new-task-name form-input" />
+      <input type="text" class="new-task-name form-input" placeholder="+ Add new task"/>
       <button onclick="createNewCard(this)" class="button add-new-card">
         + Add new card
       </button>
@@ -144,8 +144,9 @@ function readStages() {
           </div>
 
           <form class="new-card-container">
-            <input type="text" class="new-task-name form-input" />
-            <button onclick="createNewCard(this)" class="button add-new-card">
+            <input type="text" class="new-task-name form-input" placeholder="+ Add new task"/>
+            <button onclick="createNewCard(this)" class="button add-new-card
+            ">
               + Add new card
             </button>
           </form>
@@ -168,7 +169,7 @@ function readTasks() {
       let stageObj = tasks.find((stage) => stage.stageId == stageId);
       let stageTasks = stageObj.taskList;
 
-      // prikazivanje taskova na frontu
+      // show tasks on frontend
 
       stageTasks.map((task) => {
         tasksContainer.insertAdjacentHTML(
@@ -177,13 +178,16 @@ function readTasks() {
           `
       
             <div class="kanban-card">
-              <p class="task-name">${task.taskName}</p>
+              <p class="task-name ${
+                task.status == "done" ? "task-done" : ""
+              } ">${task.taskName}</p>
 
               <div class="checkbox-container">
                 <input
                   type="checkbox"
                   class="done-checkbox"
                   onclick="markTaskDone(this)"
+                  ${task.status == "done" ? "checked" : ""}
                 />
               </div>
 
