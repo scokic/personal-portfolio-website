@@ -7,8 +7,7 @@ const englishTranslation = {
 
   headerName: "Strahinja Cokic",
   headerOccupation: "frontend developer",
-  headerDescription:
-    "I'm a project manager who wants to become a frontend developer. Besides that, I love tech and apps, graphic design and working with people. It I sound interesting to you continue reading! 😀",
+  headerDescription: "I'm a project manager who wants to become a frontend developer. Besides that, I love tech and apps, graphic design and working with people. It I sound interesting to you continue reading! 😀",
   headerButton: "Contact me",
 
   aboutHeader: "About me",
@@ -25,35 +24,30 @@ const englishTranslation = {
 
   projectsHeadline: "My favourite projects",
   projectsPortfolioHeadline: "Personal portfolio",
-  projectsPortfolioDescription:
-    "I created this site you are currently browsing with vanilla HTML, CSS, and JS!",
+  projectsPortfolioDescription: "I created this site you are currently browsing with vanilla HTML, CSS, and JS!",
   projectsKanbanHeadline: "Kanban Board",
   projectsKanbanDescription: "Responsive UI for kanban task management app.",
   projectsDiceGameHeadline: "Two Player Dice Game",
-  projectsDiceGameDescription:
-    "During JavaScript course I made two player game of dices. Give it a try!",
+  projectsDiceGameDescription: "During JavaScript course I made two player game of dices. Give it a try!",
+  projectsMarvelHeroesAppHeadline: "Marvel Heroes Cards",
+  projectsMarvelHeroesAppDescription: "Did you know that Marvel has open API? Check out some of your favourite Marvel Heroes!",
   projectsTodoAppHeadline: "Todo App",
-  projectsTodoAppDescription:
-    "Complete CRUD functionality with some beautiful CSS that inspires to create new tasks",
+  projectsTodoAppDescription: "Complete CRUD functionality with some beautiful CSS that inspires to create new tasks",
 
   wordpressWebsitesHeadline: "Some WordPress websites I've made",
   wordpressWebsitesDigitalnaKancelarijaHeadline: "Digitalna Kancelarija",
-  wordpressWebsitesDigitalnaKancelarijaDescription:
-    "Presentational website for agency that is digitalizing small businesses.",
+  wordpressWebsitesDigitalnaKancelarijaDescription: "Presentational website for agency that is digitalizing small businesses.",
   wordpressWebsitesPobedimoAstmuHeadline: "Pobedimo Astmu",
-  wordpressWebsitesPobedimoAstmuDescription:
-    "Presentational website and blog for NGO that fights atopic deseases.",
+  wordpressWebsitesPobedimoAstmuDescription: "Presentational website and blog for NGO that fights atopic deseases.",
   wordpressWebsitesMedanaHeadline: "Medana",
-  wordpressWebsitesMedanaDescription:
-    "Complete web shop that is built on WordPress and WooCommerce.",
+  wordpressWebsitesMedanaDescription: "Complete web shop that is built on WordPress and WooCommerce.",
   wordpressWebsitesButtonDK: "Visit website!",
   wordpressWebsitesButtonPA: "Visit website!",
   wordpressWebsitesButtonMd: "Visit website!",
 
   contactSubHeadline: "Can you see me as part of your team?",
   contactHeadline: "Contact me!",
-  contactDescription:
-    "If you have an idea for which you need help or if you think I would be great addition to your team, I'd be more than happy to meet you! 😀",
+  contactDescription: "If you have an idea for which you need help or if you think I would be great addition to your team, I'd be more than happy to meet you! 😀",
   contactButton: "Send me a message!",
 
   footerMadeInDescription: "Made with ❤ in Belgrade",

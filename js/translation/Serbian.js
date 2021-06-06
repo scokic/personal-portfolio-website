@@ -7,8 +7,7 @@ const serbianTranslation = {
 
   headerName: "Strahinja Cokić",
   headerOccupation: "frontend developer",
-  headerDescription:
-    "Ja sam projekt menadžer koji želi da postane frontend developer. Pored toga volim tehnologiju i aplikacije, grafički dizajn i rad sa ljudima. Ako vam zvučim zanimljivo nastavite da čitate! 😀",
+  headerDescription: "Ja sam projekt menadžer koji želi da postane frontend developer. Pored toga volim tehnologiju i aplikacije, grafički dizajn i rad sa ljudima. Ako vam zvučim zanimljivo nastavite da čitate! 😀",
   headerButton: "Kontaktiraj me",
 
   aboutHeader: "O meni",
@@ -25,36 +24,30 @@ const serbianTranslation = {
 
   projectsHeadline: "Moji omiljeni projekti",
   projectsPortfolioHeadline: "Lični portfolio",
-  projectsPortfolioDescription:
-    "Napravio sam ovaj sajt na kome se trenutno nalazite sa vanilla HTML, CSS i JavaScript-om!",
+  projectsPortfolioDescription: "Napravio sam ovaj sajt na kome se trenutno nalazite sa vanilla HTML, CSS i JavaScript-om!",
   projectsKanbanHeadline: "Kanban Board",
-  projectsKanbanDescription:
-    "Resonsivan UI za kanban task menadžment aplikaciju.",
+  projectsKanbanDescription: "Resonsivan UI za kanban task menadžment aplikaciju.",
   projectsDiceGameHeadline: "Two Player Dice Game",
-  projectsDiceGameDescription:
-    "U okviru JS kursa napravio sam igricu sa kockicama za dva igrača. Isprobajte je!",
+  projectsDiceGameDescription: "U okviru JS kursa napravio sam igricu sa kockicama za dva igrača. Isprobajte je!",
+  projectsMarvelHeroesAppHeadline: "Marvel Heroes Cards",
+  projectsMarvelHeroesAppDescription: "Da li ste znali da Marvel ima otvoren API? Pogledajte neke od svojih omiljenih Marvelovih heroja!",
   projectsTodoAppHeadline: "Todo App",
-  projectsTodoAppDescription:
-    "Kompletna CRUD funkcionalnost sa CSS-om koji inspiriše na kreiranje novih zadataka!",
+  projectsTodoAppDescription: "Kompletna CRUD funkcionalnost sa CSS-om koji inspiriše na kreiranje novih zadataka!",
 
   wordpressWebsitesHeadline: "Neki WordPress sajtovi koje sam napravio",
   wordpressWebsitesDigitalnaKancelarijaHeadline: "Digitalna Kancelarija",
-  wordpressWebsitesDigitalnaKancelarijaDescription:
-    "Prezentacioni website agencije koja se bavi digitalizacijom malih privrednika.",
+  wordpressWebsitesDigitalnaKancelarijaDescription: "Prezentacioni website agencije koja se bavi digitalizacijom malih privrednika.",
   wordpressWebsitesPobedimoAstmuHeadline: "Pobedimo Astmu",
-  wordpressWebsitesPobedimoAstmuDescription:
-    "Prezentacioni sajt i blog udruženja koje se bori protiv atopijskih bolesti.",
+  wordpressWebsitesPobedimoAstmuDescription: "Prezentacioni sajt i blog udruženja koje se bori protiv atopijskih bolesti.",
   wordpressWebsitesMedanaHeadline: "Medana",
-  wordpressWebsitesMedanaDescription:
-    "Kompletna online prodavnica u kombinaciji WordPress-a i WooCommerce-a.",
+  wordpressWebsitesMedanaDescription: "Kompletna online prodavnica u kombinaciji WordPress-a i WooCommerce-a.",
   wordpressWebsitesButtonDK: "Poseti web sajt!",
   wordpressWebsitesButtonPA: "Poseti web sajt!",
   wordpressWebsitesButtonMd: "Poseti web sajt!",
 
   contactSubHeadline: "Da li me vidite kao deo vašeg tima?",
   contactHeadline: "Kontaktirajte me",
-  contactDescription:
-    "Ako imate ideju oko koje vam treba pomoć ili mislite da bih se dobro uklopio u vaš tim, biće mi drago da vas upoznam! 😀",
+  contactDescription: "Ako imate ideju oko koje vam treba pomoć ili mislite da bih se dobro uklopio u vaš tim, biće mi drago da vas upoznam! 😀",
   contactButton: "Pišite mi!",
 
   footerMadeInDescription: "Napravljeno sa ❤ u Beogradu",

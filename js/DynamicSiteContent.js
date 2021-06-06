@@ -170,6 +170,25 @@ let pageContent = document.getElementById("page-content");
       </div>
 
       <div class="project-card">
+          <img src="./img/MarvelHeroesApp.png" alt="" />
+          <div class="project-card-info">
+          <h3 id="projectsMarvelHeroesAppHeadline"></h3>
+          <p id="projectsMarvelHeroesAppDescription"></p>
+            <br />
+            <div class="project-used-tech">
+            <i class="fab fa-react"></i>
+            <i class="fab fa-sass"></i>
+            <i class="fab fa-html5"></i>
+            </div>
+            <div class="button-container">
+              <a href="https://marvel-heroes-cards.netlify.app/" class="button" target="_blank">Demo</a>
+              <a href="https://github.com/scokic/marvel-heroes" class="button github-button" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+
+      <div class="project-card">
           <img src="./img/TodoApp.png" alt="" />
           <div class="project-card-info">
           <h3 id="projectsTodoAppHeadline"></h3>
