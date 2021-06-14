@@ -265,20 +265,23 @@ p {
     height: auto;
     background-color: var(--primary);
     box-shadow: 5px 0 25px var(--shadow-dark);
+    width: 100%;
   }
 
   .nav-open .nav {
     display: flex;
   }
 
-  #nav-contact-button {
-    padding: 15px 30vw !important;
+  #navResumeButton {
+    padding: 15px 5vw !important;
+    width: 100%;
+    margin: 0;
   }
 
-  #nav-button-container {
+  #navResume {
     display: block;
-    max-width: 80vw;
-    width: 80vw;
+    max-width: 85vw;
+    width: 85vw;
     text-align: center;
   }
 
