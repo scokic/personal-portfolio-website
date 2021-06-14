@@ -1,5 +1,5 @@
 * {
-  font-family: "Raleway", sans-serif;
+  font-family: "Inter", sans-serif;
   margin: 0;
   color: var(--text);
   box-sizing: border-box;
@@ -11,7 +11,7 @@ html {
 
 body {
   --primary: #ffffff;
-  --secondary: hsl(150, 100%, 97%);
+  --secondary: #f8fafe;
 
   --contrast: hsl(208, 58%, 6%);
   --grey: #7f7f7f30;
@@ -20,11 +20,11 @@ body {
   --shadow-dark: #00000035;
   --text: #282828;
 
-  --accent: hsl(145, 50%, 50%);
-  --accent-light: hsl(145, 50%, 70%);
-  --accent-dark: hsl(145, 50%, 30%);
+  --accent: hsl(215, 80%, 50%);
+  --accent-light: hsl(215, 80%, 60%);
+  --accent-dark: hsl(215, 80%, 40%);
 
-  --accent-shadow: rgba(66, 181, 113, 0.5);
+  --accent-shadow: hsl(215, 80%, 50%);
   --always-white: #ffffff;
 
   background-color: var(--primary);
@@ -44,11 +44,11 @@ body.dark {
   --text: #ffffff;
   --text-light: #cccccc;
 
-  --accent: hsl(145, 50%, 50%);
-  --accent-light: hsl(145, 50%, 70%);
-  --accent-dark: hsl(145, 50%, 30%);
+  --accent: hsl(215, 80%, 50%);
+  --accent-light: hsl(215, 80%, 60%);
+  --accent-dark: hsl(215, 80%, 40%);
 
-  --accent-shadow: rgba(66, 181, 113, 0.5);
+  --accent-shadow: hsl(215, 80%, 50%);
   --always-white: #ffffff;
 }
 
@@ -63,13 +63,13 @@ h1 {
 h2 {
   font-size: 3rem;
   line-height: 3.5rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 h3 {
   font-size: 2rem;
   line-height: 2.5rem;
-  font-weight: 400;
+  font-weight: 500;
   color: var(--text-light);
 }
 
@@ -77,7 +77,7 @@ p {
   font-size: 1.1rem;
   line-height: 1.5rem;
   color: var(--text-light);
-  font-family: "Lato", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 @media screen and (max-width: 800px) {
@@ -162,10 +162,6 @@ p {
   text-decoration: none;
   padding: 1em;
   text-transform: uppercase;
-}
-
-.nav a:hover {
-  color: var(--accent);
 }
 
 .logo-container {
@@ -895,15 +891,15 @@ body.dark .tool-image-placeholder {
 
 .digitalnakancelarija {
   background-color: #f9fafb;
-  background-image: url("../img/DigitalnaKancelarija.png");
+  background-image: url("../img/DigitalnaKancelarija.jpg");
 }
 .pobedimoastmu {
   background-color: white;
-  background-image: url("../img/PobedimoAstmu.png");
+  background-image: url("../img/PobedimoAstmu.jpg");
 }
 .medana {
   background-color: #0a0a0a;
-  background-image: url("../img/Medana.png");
+  background-image: url("../img/Medana.jpg");
 }
 
 .iphone-x:before,
@@ -947,7 +943,7 @@ body.dark .tool-image-placeholder {
 
 .contact {
   padding: 7.5em 0;
-  background: var(--secondary);
+  background: var(--accent);
 }
 
 .contact .container {
@@ -957,21 +953,26 @@ body.dark .tool-image-placeholder {
 .contact h3 {
   font-size: 2em;
   text-align: center;
+  color: var(--always-white);
 }
 
 .contact h2 {
   font-size: 4rem;
   margin: 2.5rem auto;
+  color: var(--always-white);
 }
 
 .contact p {
   text-align: center;
   margin-bottom: 2.5rem;
+  color: var(--always-white);
 }
 
 .contact .button {
   padding: 15px 40px;
   font-size: 1.2rem;
+  background-color: var(--always-white);
+  color: var(--accent);
 }
 
 @media only screen and (min-width: 800px) {

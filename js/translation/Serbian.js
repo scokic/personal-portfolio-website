@@ -12,8 +12,7 @@ const serbianTranslation = {
   resumeButton: "Pogledaj moj CV",
 
   aboutHeader: "O meni",
-  aboutDescription:
-    "Ja sam neko ko voli da isprobava i istražuje stvari. Tokom karijere imao sam priliku da to istraživanje sprovodim u delo konstantno isprobavajući nove poslove i rad sa novim timovima. U međuvremenu sam isprobavao razne metodologije organizacije i razne aplikacije. Tada sam shvatio da mnogo volim softver i iz dana u dan sam sve više uživao u kvalitetno napravljenoj aplikaciji. U nekom trenutku sam se zapitao: zašto ne bih ja napravio svoju aplikaciju? Tada sam shvatio da je development za mene. Kako sam u međuvremenu stekao iskustvo u dizajnu i WordPress-u rešio sam da počnem od frontenda. Trenutno učim JavaScript i React ali sam otvoren za učenje i rad u Vue i Angular-u.",
+  aboutDescription: `Ja sam neko ko voli da isprobava i istražuje stvari. Tokom karijere imao sam priliku da to istraživanje sprovodim u delo konstantno isprobavajući nove poslove i rad sa novim timovima. U međuvremenu sam isprobavao razne metodologije organizacije i razne aplikacije. Tada sam shvatio da mnogo volim softver i iz dana u dan sam sve više uživao u kvalitetno napravljenoj aplikaciji. U nekom trenutku sam se zapitao: zašto ne bih ja napravio svoju aplikaciju? Tada sam shvatio da je development za mene. Kako sam u međuvremenu stekao iskustvo u dizajnu i WordPress-u rešio sam da počnem od frontenda. Trenutno učim JavaScript i React ali sam otvoren za učenje i rad u Vue i Angular-u.`,
   aboutHtmlPopup: "Naučeno",
   aboutCSSPopup: "Naučeno",
   aboutJSPopup: "Trenutno učim",

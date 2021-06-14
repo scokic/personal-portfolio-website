@@ -64,7 +64,7 @@ let pageContent = document.getElementById("page-content");
       </div>
 
       <div class="img-container">
-        <img src="./img/Profile2.jpeg" />
+        <img src="./img/Profile2.jpg" />
         <div class="img-background-element elipse"></div>
         <div class="img-background-element square"></div>
         <div class="img-background-element circle"></div>
@@ -153,7 +153,7 @@ let pageContent = document.getElementById("page-content");
 
       <div class="project-card">
         
-        <img src="./img/PersonalPortfolio.png" alt="" />
+        <img src="./img/PersonalPortfolio.jpg" alt="" />
         
         <div class="project-card-info">
           <h3 id="projectsPortfolioHeadline"></h3>
@@ -171,7 +171,7 @@ let pageContent = document.getElementById("page-content");
       </div>
 
       <div class="project-card">
-          <img src="./img/MarvelHeroesApp.png" alt="" />
+          <img src="./img/MarvelHeroesApp.jpg" alt="" />
           <div class="project-card-info">
           <h3 id="projectsMarvelHeroesAppHeadline"></h3>
           <p id="projectsMarvelHeroesAppDescription"></p>
@@ -190,7 +190,7 @@ let pageContent = document.getElementById("page-content");
 
 
       <div class="project-card">
-          <img src="./img/TodoApp.png" alt="" />
+          <img src="./img/TodoApp.jpg" alt="" />
           <div class="project-card-info">
           <h3 id="projectsTodoAppHeadline"></h3>
           <p id="projectsTodoAppDescription"></p>
@@ -210,7 +210,7 @@ let pageContent = document.getElementById("page-content");
 
 
         <div class="project-card">
-          <img src="./img/Kanban Board.png" alt="" />
+          <img src="./img/Kanban Board.jpg" alt="" />
           <div class="project-card-info">
           <h3 id="projectsKanbanHeadline"></h3>
           <p id="projectsKanbanDescription"></p>
@@ -228,7 +228,7 @@ let pageContent = document.getElementById("page-content");
         </div>
 
         <div class="project-card">
-          <img src="./img/Two Player Dice Game.png" alt="" />
+          <img src="./img/Two Player Dice Game.jpg" alt="" />
           <div class="project-card-info">
           <h3 id="projectsDiceGameHeadline"></h3>
           <p id="projectsDiceGameDescription"></p>

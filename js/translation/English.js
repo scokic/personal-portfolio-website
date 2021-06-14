@@ -13,7 +13,7 @@ const englishTranslation = {
 
   aboutHeader: "About me",
   aboutDescription:
-    "I am someone who loves to thinker with things.During my career I had opportunity to do the research consistently by trying out myself in different roles and different teams. In the meantime I've been trying out a bunch of organizational methodologies and apps. That's when I've figured out that I love software and that I've enjoyed more and more in great made apps with day by day. At some point I've asked myself: Why wouldn't I be the guy that's making great apps? That's when I've realized that development is for me. Since I've already had previous experience in graphic design and WordPress I decided to start learning web development from Frontend side of things. I am currently learning JavaScript and React but I am open for learning and work in Vue and Angular as well.",
+    "I am someone who loves to thinker with things. During my career I had opportunity to do the research consistently by trying out myself in different roles and different teams. In the meantime I've been trying out a bunch of organizational methodologies and apps. That's when I've figured out that I love software and that I've enjoyed more and more in great made apps with day by day. At some point I've asked myself: Why wouldn't I be the guy that's making great apps? That's when I've realized that development is for me. Since I've already had previous experience in graphic design and WordPress I decided to start learning web development from Frontend side of things. I am currently learning JavaScript and React but I am open for learning and work in Vue and Angular as well.",
   aboutHtmlPopup: "Learned",
   aboutCSSPopup: "Learned",
   aboutJSPopup: "Currently learning",
