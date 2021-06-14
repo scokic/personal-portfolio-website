@@ -542,6 +542,12 @@ body.en #serbian {
   padding: 15px 30px;
 }
 
+@media screen and (max-width: 925px) {
+  #resumeButton {
+    margin-top: 25px;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .hero {
     padding-top: 10vh;

@@ -15,7 +15,7 @@ let pageContent = document.getElementById("page-content");
           <li><a id="navAbout" class="nav-link" href="#about-me"></a></li>
           <li><a id="navProjects" class="nav-link" href="#projects"></a></li>
           <li><a id="navWordpressWebsites" class="nav-link" href="#wordpressWebsites"></a></li>
-          <li id="nav-button-container"><a id="navContact" class="button nav-button nav-link contact-button" id="nav-contact-button" href="#contact"></a></li>
+          <li id="navResume"><a id="navResumeButton" class="button nav-button contact-button" href="/resume.html" target="_blank">RESUME</a></li>
         </ul>
       </div>
 
@@ -60,7 +60,7 @@ let pageContent = document.getElementById("page-content");
         <p id="headerDescription">
         </p>
         <a id="headerButton" class="button nav-link contact-button" href="#contact"></a>
-        <a id="resumeButton" class="button nav-link" href="/modules/resume.html" target="_blank"></a>
+        <a id="resumeButton" class="button" href="/resume.html" target="_blank"></a>
       </div>
 
       <div class="img-container">

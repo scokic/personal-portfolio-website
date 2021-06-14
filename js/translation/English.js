@@ -3,7 +3,7 @@ const englishTranslation = {
   navAbout: "About",
   navProjects: "Projects",
   navWordpressWebsites: "WordPress",
-  navContact: "Contact",
+  navResumeButton: "Resume",
 
   headerName: "Strahinja Cokic",
   headerOccupation: "frontend developer",

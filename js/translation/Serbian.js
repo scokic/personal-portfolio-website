@@ -3,7 +3,7 @@ const serbianTranslation = {
   navAbout: "O meni",
   navProjects: "Projekti",
   navWordpressWebsites: "WordPress",
-  navContact: "Kontakt",
+  navResumeButton: "Preuzmi CV",
 
   headerName: "Strahinja Cokić",
   headerOccupation: "frontend developer",
