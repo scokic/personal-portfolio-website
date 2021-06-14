@@ -9,14 +9,20 @@ So far I've mostly learned HTML, CSS, and JavaScript, so website has been built 
 
 [Link to hosted website](https://scokic.github.io/personal-portfolio-website/)
 
-## Website features
+## Website Features
 - Website is fully responsive and it looks great on mobile devices
 - Website recognises your preferred options and will load light or dark theme based on your device settings
 - The website is generated fully in JS
 - You can switch between English and Serbian version
 
-## Technologies used
+## Technologies Used
 - HTML
 - CSS
 - JavaScript
 - Git
+
+## What I Learned
+- How to create dark theme that recognizes system settings
+- How to implement custom language translation to the website and read it from separate js files
+- How to create website via Gitflow
+- How to generate HTML file from JS file, and use JS for rendering input
