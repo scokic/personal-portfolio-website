@@ -60,6 +60,7 @@ let pageContent = document.getElementById("page-content");
         <p id="headerDescription">
         </p>
         <a id="headerButton" class="button nav-link contact-button" href="#contact"></a>
+        <a id="resumeButton" class="button nav-link" href="../resume.pdf" target="_blank"></a>
       </div>
 
       <div class="img-container">

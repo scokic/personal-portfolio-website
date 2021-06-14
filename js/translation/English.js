@@ -9,6 +9,7 @@ const englishTranslation = {
   headerOccupation: "frontend developer",
   headerDescription: "I'm a project manager who wants to become a frontend developer. Besides that, I love tech and apps, graphic design and working with people. It I sound interesting to you continue reading! 😀",
   headerButton: "Contact me",
+  resumeButton: "Download my resume",
 
   aboutHeader: "About me",
   aboutDescription:

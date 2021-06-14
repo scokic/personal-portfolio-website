@@ -539,6 +539,7 @@ body.en #serbian {
 
 .hero .button {
   margin-left: 0;
+  padding: 15px 30px;
 }
 
 @media screen and (max-width: 800px) {
@@ -879,8 +880,7 @@ body.dark .tool-image-placeholder {
   background-position-y: 20px;
   background-repeat: no-repeat;
   border-radius: 25px;
-  box-shadow: 0px 0px 0px 9px #1f1f1f, 0px 0px 0px 10px #191919,
-    0px 0px 0px 15px #111;
+  box-shadow: 0px 0px 0px 9px #1f1f1f, 0px 0px 0px 10px #191919, 0px 0px 0px 15px #111;
   transform: translateX(25px);
 }
 
