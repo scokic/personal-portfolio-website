@@ -64,7 +64,7 @@ let pageContent = document.getElementById("page-content");
       </div>
 
       <div class="img-container">
-        <img src="./img/Profile2.jpg" />
+        <img src="./img/Profile2.jpg" width="80%"/>
         <div class="img-background-element elipse"></div>
         <div class="img-background-element square"></div>
         <div class="img-background-element circle"></div>
