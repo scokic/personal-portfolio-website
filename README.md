@@ -1,4 +1,4 @@
-# Strahinja's website
+# 👨‍💻 Strahinja's website
 
 
 Hello! This is my personal portfolio [website](https://scokic.github.io/personal-portfolio-website/).
